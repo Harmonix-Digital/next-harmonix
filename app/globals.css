@@ -20,7 +20,40 @@
 }
 
 body {
-  background: var(--background);
+  /* background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+   */
+   background-color: #0F1115;
+   color:#fff;
+}
+
+@theme {
+  --font-jakarta: var(--font-jakarta);
+  --text-big: 4rem;
+  --tracking-extra: 0.015em;
+  --rounded-big:2.5rem;
+}
+
+@theme {
+  --color-golden: #C19E5B;
+  --color-green:  #095552;
+  --breakpoint-xs: 30rem;
+}
+
+section{
+  padding:0 20px;
+}
+
+.container{
+  max-width: 1274px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.home_desc_block{
+  /* border: 0.82px solid;
+  border-image-source: 
+    linear-gradient(107.22deg, rgba(1, 45, 42, 0.3) 4.49%, rgba(3, 147, 137, 0.15) 61.83%),
+    linear-gradient(102.01deg, rgba(1, 45, 42, 0) 12.61%, rgba(1, 45, 42, 0.1) 103.11%);
+  border-image-slice: 1; */
 }
