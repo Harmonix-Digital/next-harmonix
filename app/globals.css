@@ -24,7 +24,7 @@ body {
   color: var(--foreground);
    */
    background-color: #0F1115;
-   color:#fff;
+   color:#F5F5F5;
 }
 
 @theme {
@@ -37,11 +37,17 @@ body {
 @theme {
   --color-golden: #C19E5B;
   --color-green:  #095552;
+  --color-offwhite:  #F5F5F5;
+  --color-siteBlack:  #0F1115;
   --breakpoint-xs: 30rem;
 }
 
 section{
   padding:0 20px;
+
+  @media only screen and (max-width:1240px){
+    padding: 0 36px;
+  }
 }
 
 .container{
@@ -56,4 +62,8 @@ section{
     linear-gradient(107.22deg, rgba(1, 45, 42, 0.3) 4.49%, rgba(3, 147, 137, 0.15) 61.83%),
     linear-gradient(102.01deg, rgba(1, 45, 42, 0) 12.61%, rgba(1, 45, 42, 0.1) 103.11%);
   border-image-slice: 1; */
+}
+
+.home_agent_index{
+
 }
