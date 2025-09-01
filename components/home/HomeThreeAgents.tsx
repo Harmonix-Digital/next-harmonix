@@ -165,9 +165,9 @@ export default function HomeThreeAgents() {
 
 
           <div className="mt-11 flex gap-6 justify-center">
-            <Link className="text-2xl font-semibold bg-golden rounded-[20px]  p-6 text-siteBlack border border-golden hover:bg-siteBlack hover:text-golden transition-all duration-300" href={current.deploy}>Deploy Agent</Link>
+            <Link className="text-2xl font-semibold bg-golden rounded-[20px]  px-6 py-4 text-siteBlack border border-golden hover:bg-siteBlack hover:text-golden transition-all duration-300" href={current.deploy}>Deploy Agent</Link>
 
-            <Link className="text-2xl font-semibold flex gap-2 items-center rounded-[20px] p-6 border border-golden text-offwhite hover:bg-golden hover:text-siteBlack transition-all duration-300" href={current.learnMore}><span>Learn More</span> <Image src="/images/angle-right.png" alt="Right angle icon" width={20} height={20} /> </Link>
+            <Link className="text-2xl font-semibold flex gap-2 items-center rounded-[20px] px-6 py-4 border border-golden text-offwhite hover:bg-golden hover:text-siteBlack transition-all duration-300" href={current.learnMore}><span>Learn More</span> <Image src="/images/angle-right.png" alt="Right angle icon" width={20} height={20} /> </Link>
           </div>
 
 

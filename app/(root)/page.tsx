@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import HomeThreeAgents from "@/components/home/HomeThreeAgents";
+import YellowButton from "@/components/ui/YellowButton";
+import BlackButton from "@/components/ui/BlackButton";
 
 export default function Home() {
   return (
@@ -55,7 +57,7 @@ export default function Home() {
       
       <section className="home_desc mt-24">
         <div className="container">
-          <h2 className="text-big font-semibold mb-9 text-center mb-11">Design a business that runs <span className="text-golden">itself</span> </h2>
+          <h2 className="text-big font-semibold text-center mb-11">Design a business that runs <span className="text-golden">itself</span> </h2>
           <p className="sub_text text-2xl text-center">A full AI operating system for teams who value freedom, clarity, and flow.</p>
           
 
@@ -186,7 +188,7 @@ export default function Home() {
       <section className="home_tiers mt-19">
         <div className="container">
           
-          <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-6 w-[296px] mx-auto text-golden text-lg font-semibold">
+          <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-[15px] w-[296px] mx-auto text-golden text-lg font-semibold">
             <span>Early Adopter Pricing</span>
             <Image src="/images/clock.png" alt="Clock icon" width={28} height={28} />
           </div>
@@ -274,7 +276,7 @@ export default function Home() {
       <section className="owner_feature mt-19">
         <div className="container">
 
-          <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-6 w-[296px] mx-auto text-golden text-lg font-semibold">
+          <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-[15px] w-[296px] mx-auto text-golden text-lg font-semibold">
             <span>Harmonix Tokens</span>
             <Image src="/images/dollar.png" alt="Clock icon" width={28} height={28} />
           </div>
@@ -282,11 +284,12 @@ export default function Home() {
           <h2 className="text-big font-semibold text-center mb-5 text-golden"> Unlock the Future of AI Ownership</h2>
           <p className="sub_text text-2xl text-center">Our NFTs aren’t just collectibles. They’re functional tokens designed to connect you with rewards, access, and growth inside our AI-driven platform</p>
 
-          <div className="flex">
+          <div className="flex gap-11 mt-[160px] pb-[195px]">
+            
             <div className="relative flex">
               
-              <div>
-                <div className="single_card bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative -right-[15px]">
+              <div className="single_card">
+                <div className=" bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative -right-[15px]">
                   <Image src="/images/token-img.png" width={258} height={261} alt="ownership image" />
                   <p className="text-golden font-semibold">Harmonix Tokens 2</p>
                   <div className="flex justify-between">
@@ -306,7 +309,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div>
+              <div className="single_card">
                 <div className="single_card bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative top-[70%] ">
                   <Image src="/images/token-img.png" width={258} height={261} alt="ownership image" />
                   <p className="text-golden font-semibold">Harmonix Tokens 2</p>
@@ -331,7 +334,7 @@ export default function Home() {
 
               </div>
 
-              <div>
+              <div className="single_card">
                 <div className="single_card bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative -left-[15px]">
                   <Image src="/images/token-img.png" width={258} height={261} alt="ownership image" />
                   <p className="text-golden font-semibold">Harmonix Tokens 2</p>
@@ -354,6 +357,143 @@ export default function Home() {
 
 
             </div>
+
+            <div className="right-col">
+              <p className="font-semibold text-5xl text-center leading-20 text-golden max-w-[500px]">Collect. Connect. Grow with AI</p>
+              
+              <div className="flex justify-center gap-9 mt-[130px]">
+                <YellowButton href="/" className="shadow-lg">Mint Now</YellowButton>
+                <BlackButton href="/" className="flex gap-1 items-center justify-center"><span>Learn more</span> <Image alt="right angle" src="/images/angle-right.png" width={16} height={16} /></BlackButton>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section className="sol mt-19">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-7">
+            
+            <div className="col-span-4 ">
+              
+              <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-[15px] w-[296px] text-golden text-lg font-semibold">
+                <span>SŌL Brain Preview</span>
+                <Image src="/images/brain.png" alt="Clock icon" width={28} height={28} />
+              </div>
+
+              <h2 className="text-big font-semibold  mb-5 text-golden">What Is SŌL?</h2>
+              <p className="sub_text text-2xl ">The consciousness that orchestrates your AI workforce. SŌL analyzes your business, assigns the right agents, and optimizes your operations with sacred precision.</p>
+
+              <ul className="sol_list flex flex-col gap-10 mt-20">
+                <li className="flex items-center gap-5 text-2xl  ">
+                  <Image src="/images/golden-star.png" alt="Star icon" width={20} height={20} />
+                  <span>Diagnoses your business automatically</span>
+                </li>
+
+                <li className="flex items-center gap-5 text-2xl  ">
+                  <Image src="/images/golden-star.png" alt="Star icon" width={20} height={20} />
+                  <span>Intelligent agent assignment logic</span>
+                </li>
+                
+                <li className="flex items-center gap-5 text-2xl  ">
+                  <Image src="/images/golden-star.png" alt="Star icon" width={20} height={20} />
+                  <span>Real-time ROI calculator</span>
+                </li>
+
+                <li className="flex items-center gap-5 text-2xl  ">
+                  <Image src="/images/golden-star.png" alt="Star icon" width={20} height={20} />
+                  <span>Adaptive learning from patterns</span>
+                </li>
+
+
+              </ul>
+
+              <YellowButton className="flex gap-2 items-center mt-14"><span>Ask SOL how we can help  your business</span> <Image src="/images/angle-right-black.png" alt="Angle right" width={24} height={24} />  </YellowButton>
+
+            </div>
+            
+            <div className="col-span-3 pt-11">
+              <Image src="/images/sol_image.png" alt="SOL Image" width={590} height={590}  />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="savings mt-19">
+        <div className="container">
+          <h2 className="font-semibold text-5xl text-center leading-20 text-golden mb-5">This isn't theory — it's already saving teams 40+ hours/week</h2>
+          <p className="sub_text text-2xl text-center">Real results from businesses that have activated their AI workforce.</p>
+
+          <div className="savings_col_wrap flex justify-between gap-11 mt-[170px]">
+            
+            <div className="savings_col">
+              <p className="font-semibold text-[76px] text-center">40+</p>
+              <p className="text-golden text-[32px] text-center">Hours saved per week</p>
+            </div>            
+            <div className="savings_col">
+              <p className="font-semibold text-[76px] text-center">40+</p>
+              <p className="text-golden text-[32px] text-center">Hours saved per week</p>
+            </div>            
+            <div className="savings_col">
+              <p className="font-semibold text-[76px] text-center">40+</p>
+              <p className="text-golden text-[32px] text-center">Hours saved per week</p>
+            </div>
+
+          </div>
+
+          <div className="savings_cta_wrap flex justify-center gap-19 mt-22">
+            <YellowButton className="flex gap-1 items-center"><Image src="/images/video_icon.png" alt="video icon" width={18} height={18} /> <span>Watch Live Demo</span> </YellowButton>
+
+            <BlackButton className="">Read Success Stories</BlackButton>
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+      <section className="savings mt-24">
+        <div className="container">
+          <h2 className="font-semibold text-5xl text-center leading-20 text-golden mb-5">Connect Your Digital Wallet</h2>
+          <p className="sub_text text-2xl text-center">Securely manage your crypto assets, track your earnings, and explore your NFT collection with Harmonix.</p>
+
+
+          <div className="savings_cta_wrap flex justify-center gap-19 mt-22">
+            <YellowButton className="flex gap-1 items-center"><Image src="/images/wallet.png" alt="video icon" width={18} height={18} /> <span>Connect Wallet</span> </YellowButton>
+          </div>
+
+
+          <div className="wallet_col_wrap flex justify-between gap-11 mt-[170px]">
+            
+            <div className="savings_col relative">
+              <Image className="absolute w-full -top-24 -left-24 z-10" src="/images/wallet-glow.png" width={142} height={57} alt="background glow" />
+              <div className="relative z-20">
+                <p className="font-semibold text-[30px] text-golden">Track Earnings</p>
+                <p className=" text-lg">Monitor your portfolio performance and earnings in real-time</p>
+              </div>
+            </div>               
+            <div className="savings_col relative">
+              <Image className="absolute w-full -top-24 -left-24 z-10" src="/images/wallet-glow.png" width={142} height={57} alt="background glow" />
+              <div className="relative z-20">
+                <p className="font-semibold text-[30px] text-golden">Manage Tokens</p>
+                <p className=" text-lg">View and manage your token balances across multiple chains</p>
+              </div>
+            </div>
+
+            <div className="savings_col relative">
+              <Image className="absolute w-full -top-24 -left-24 z-10" src="/images/wallet-glow.png" width={142} height={57} alt="background glow" />
+              <div className="relative z-20">
+                <p className="font-semibold text-[30px] text-golden">NFT Gallery</p>
+                <p className="text-lg">Showcase and organize your NFT collection in one place</p>
+              </div>
+            </div>
+            
+          
+
+
           </div>
 
         </div>
