@@ -7,15 +7,16 @@ import BlackButton from "@/components/ui/BlackButton";
 export default function Home() {
   return (
     <>
-      <section className="home_hero overflow-hidden tracking-extra">
+      <section className="home_hero overflow-hidden tracking-extra pt-[105px]">
         <div className="container bg-[url('/images/square-lines.png')] bg-cover bg-center relative">
           <div className="light_images_wrap"></div>
           <Image className="absolute z-10 w-full max-w-full -top-[5%]" src="/images/left-right-light.png" alt="decorative light" width={1432} height={345} />
           <Image className="absolute z-10 w-full max-w-[80%] left-1/2 -translate-x-1/2 top-[10%] " src="/images/hero-main-light.png" alt="decorative light" width={1440} height={995} />
 
           <div className="home_hero_wrap grid grid-cols-1 lg:grid-cols-12 relative z-20 items-center">
+            
             <div className="col-span-6">
-              <h1 className="font-semibold text-golden text-6xl ">The elite, AI automation platform</h1>
+              <h1 className="font-semibold text-golden text-6xl leading-20">The elite, AI automation platform</h1>
               <p className="text-2xl leading-[34px] mt-[54px] mb-[64px]">Transform your business with advanced AI agents-powered by blockchain innovation</p>
 
               <div className="hero_cta_wrap flex gap-11 text-2xl font-semibold">
@@ -30,7 +31,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="col-span-5">
+            <div className="col-span-6">
               <Image src="/images/hero-img.png" alt="Ai Image" height={664} width={656}  />
             </div>
           </div>
@@ -38,16 +39,16 @@ export default function Home() {
           <div className="hero_blocks_wrap flex gap-4 justify-between items-center relative z-20 mt-22">
             
             <div className="home_hero_block">
-              <p className="text-3xl font-semibold text-center mb-[18px]">Early Adopters</p>
+              <p className="text-3xl font-semibold text-center text-golden">Early Adopters</p>
               <p className="text-lg font-medium text-center max-w-[230px] mx-auto">Manage your AI agents 
               from a single dashboard</p>
             </div>           
             <div className="home_hero_block">
-              <p className="text-3xl font-semibold text-center mb-[18px]">Agent Marketplace</p>
+              <p className="text-3xl font-semibold text-center text-golden">Agent Marketplace</p>
               <p className="text-lg font-medium text-center max-w-[230px] mx-auto">Browse and deploy AI agents to serve yor needs</p>
             </div>           
             <div className="home_hero_block">
-              <p className="text-3xl font-semibold text-center mb-[18px]">Harmonix Token</p>
+              <p className="text-3xl font-semibold text-center text-golden">Harmonix Token</p>
               <p className="text-lg font-medium text-center max-w-[230px] mx-auto">Recharge your AI agents with our stable token</p>
             </div>
 
@@ -55,9 +56,9 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="home_desc mt-24">
+      <section className="home_desc mt-21">
         <div className="container">
-          <h2 className="text-big font-semibold text-center mb-11">Design a business that runs <span className="text-golden">itself</span> </h2>
+          <h2 className="text-big font-semibold text-center mb-5">Design a business that runs <span className="text-golden">itself</span> </h2>
           <p className="sub_text text-2xl text-center">A full AI operating system for teams who value freedom, clarity, and flow.</p>
           
 
@@ -65,16 +66,16 @@ export default function Home() {
             
             <div className="home_desc_block rounded-3xl bg-[#D9D9D91A]  pt-0 pb-9">
               <div className="flex justify-end">
-                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-xl">Agent Intelligence</p>
+                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-[27px]">Agent Intelligence</p>
               </div>
 
               <div className="px-7 mt-9">
-                <p className="pb-5 font-medium text-lg">12 core agents trained for sales, systems, content, and client ops.</p>
+                <p className="pb-5 font-medium text-[20px] leading-[35px]">12 core agents trained for sales, systems, content, and client ops.</p>
 
                 <div className="home-desc_points relative">
                   <Image className="absolute left-[4px] top-2.5 z-10 max-h-[98%]" src="/images/white-ver-line.png"  width={4} height={180} alt='vertical bar' />
                   
-                  <ul className="flex flex-col justify-between gap-17">
+                  <ul className="flex flex-col justify-between gap-11 mt-2">
 
                     <li className="realtive z-20 flex gap-4 items-center text-[#F5F5F5]">
                       <Image className="w-3 h-3 mt-1.5" src="/images/golden-circle-filled.png" width={12} height={12} alt="Golden circle" />Sales automation
@@ -99,16 +100,16 @@ export default function Home() {
 
             <div className="home_desc_block rounded-3xl bg-[#D9D9D91A]  pt-0 pb-9">
               <div className="flex justify-end">
-                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-xl">Seamless Integration</p>
+                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-[27px]">Seamless Integration</p>
               </div>
 
               <div className="px-7 mt-9">
-                <p className="pb-5 font-medium text-lg">Plug into your tools: GHL, Stripe, Slack, Notion, ClickUp & more.</p>
+                <p className="pb-5 font-medium text-[20px] leading-[35px]">Plug into your tools: GHL, Stripe, Slack, Notion, ClickUp & more.</p>
 
                 <div className="home-desc_points relative">
                   <Image className="absolute left-[4px] top-2.5 z-10 max-h-[98%]" src="/images/white-ver-line.png"  width={4} height={180} alt='vertical bar' />
                   
-                  <ul className="flex flex-col justify-between gap-17">
+                  <ul className="flex flex-col justify-between gap-11 mt-2">
 
                     <li className="realtive z-20 flex gap-4 items-center text-[#F5F5F5]">
                       <Image className="w-3 h-3 mt-1.5" src="/images/golden-circle-filled.png" width={12} height={12} alt="Golden circle" />CRM sync
@@ -133,16 +134,16 @@ export default function Home() {
 
             <div className="home_desc_block rounded-3xl bg-[#D9D9D91A]  pt-0 pb-9">
               <div className="flex justify-end">
-                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-xl">Time Sovereignty</p>
+                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-[27px]">Time Sovereignty</p>
               </div>
 
               <div className="px-7 mt-9">
-                <p className="pb-5 font-medium text-lg">Track time saved per task. Grow in flow — not in stress.</p>
+                <p className="pb-5 font-medium text-[20px] leading-[35px]">Track time saved per task. Grow in flow — not in stress.</p>
 
                 <div className="home-desc_points relative">
                   <Image className="absolute left-[4px] top-2.5 z-10 max-h-[98%]" src="/images/white-ver-line.png"  width={4} height={180} alt='vertical bar' />
                   
-                  <ul className="flex flex-col justify-between gap-17">
+                  <ul className="flex flex-col justify-between gap-11 mt-2">
 
                     <li className="realtive z-20 flex gap-4 items-center text-[#F5F5F5]">
                       <Image className="w-3 h-3 mt-1.5" src="/images/golden-circle-filled.png" width={12} height={12} alt="Golden circle" />Time tracking
@@ -173,7 +174,7 @@ export default function Home() {
 
       <section className="home_harmonix_can_do mt-19">
         <div className="container">
-          <h2 className="text-big font-semibold text-center mb-11 text-golden">What Can Harmonix Agents Do?</h2>
+          <h2 className="text-big font-semibold text-center mb-9 text-golden">What Can Harmonix Agents Do?</h2>
           <p className="sub_text text-2xl text-center">Discover the specialized AI agents that will transform your business operations.</p>
 
           <HomeThreeAgents />
@@ -186,7 +187,7 @@ export default function Home() {
 
 
       <section className="home_tiers mt-19">
-        <div className="container">
+        <div className="container !max-w-[1380px]">
           
           <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-[15px] w-[296px] mx-auto text-golden text-lg font-semibold">
             <span>Early Adopter Pricing</span>
@@ -199,8 +200,8 @@ export default function Home() {
 
           <div className="tiers_wrap flex flex-col md:flex-row md:flex-wrap gap-4 items-center justify-center mt-24">
             
-            <div className="tier bg-[#D9D9D9]/10 rounded-[10px] flex flex-col items-center p-6">
-              <p className="text-golden text-2xl font-semibold mb-4">Starter</p>
+            <div className="tier flex-1 bg-[#D9D9D9]/10 rounded-[10px] flex flex-col items-center p-7">
+              <p className="text-golden text-[28px] font-semibold mb-3">Starter</p>
               <p className="font-semibold text-[12px] mb-6">1 Agent</p>
               <p className="text-offwhite text-[16px] font-semibold mb-2">$320/month</p>
               <p className="text-golden text-[9px] font-semibold mb-6">Ongoing monthly cost</p>
@@ -214,11 +215,11 @@ export default function Home() {
               <button className="rounded-[8px] px-2 py-3 border border-golden text-[10px]">Pay 30% Deposit & Get 15% Off + Priority Access</button>
             </div>
 
-            <div className="tier bg-[#D9D9D9]/10 rounded-[10px] flex flex-col items-center p-6 relative">
+            <div className="tier flex-1 bg-[#D9D9D9]/10 rounded-[10px] flex flex-col items-center p-7 relative">
               <div className="popular bg-[#D9D9D9]/10 rounded-[12px] px-2.5 py-3.5 absolute -translate-y-1/2 -top-[10px]">
                 <p className="text-[10px] text-golden font-semibold">Most Popular</p>  
               </div>
-              <p className="text-golden text-2xl font-semibold mb-4">Growth</p>
+              <p className="text-golden text-[28px] font-semibold mb-3">Growth</p>
               <p className="font-semibold text-[12px] mb-6">3–5 Agents</p>
               <p className="text-offwhite text-[16px] font-semibold mb-2">$960 – $1,600/month</p>
               <p className="text-golden text-[9px] font-semibold mb-6">Ongoing monthly cost</p>
@@ -232,8 +233,8 @@ export default function Home() {
               <button className="rounded-[8px] px-2 py-3 border border-golden text-[10px]">Pay 30% Deposit & Get 15% Off + Priority Access</button>
             </div>  
 
-            <div className="tier bg-[#D9D9D9]/10 rounded-[10px] flex flex-col items-center p-6">
-              <p className="text-golden text-2xl font-semibold mb-4">Expansion</p>
+            <div className="tier flex-1 bg-[#D9D9D9]/10 rounded-[10px] flex flex-col items-center p-7">
+              <p className="text-golden text-[28px] font-semibold mb-3">Expansion</p>
               <p className="font-semibold text-[12px] mb-6">6–8 Agents</p>
               <p className="text-offwhite text-[16px] font-semibold mb-2">$1,920 – $2,560/month
               </p>
@@ -248,8 +249,8 @@ export default function Home() {
               <button className="rounded-[8px] px-2 py-3 border border-golden text-[10px]">Pay 30% Deposit & Get 15% Off + Priority Access</button>
             </div>
 
-            <div className="tier bg-[#D9D9D9]/10 rounded-[10px] flex flex-col items-center p-6">
-              <p className="text-golden text-2xl font-semibold mb-4">Enterprise</p>
+            <div className="tier flex-1 bg-[#D9D9D9]/10 rounded-[10px] flex flex-col items-center p-7">
+              <p className="text-golden text-[28px] font-semibold mb-3">Enterprise</p>
               <p className="font-semibold text-[12px] mb-6">9–12 Agents</p>
               <p className="text-offwhite text-[16px] font-semibold mb-2">$2,880 – $3,840/month              </p>
               <p className="text-golden text-[9px] font-semibold mb-6">Ongoing monthly cost</p>
@@ -281,10 +282,10 @@ export default function Home() {
             <Image src="/images/dollar.png" alt="Clock icon" width={28} height={28} />
           </div>
 
-          <h2 className="text-big font-semibold text-center mb-5 text-golden"> Unlock the Future of AI Ownership</h2>
+          <h2 className="text-big font-semibold text-center mt-4 mb-5 text-golden"> Unlock the Future of AI Ownership</h2>
           <p className="sub_text text-2xl text-center">Our NFTs aren’t just collectibles. They’re functional tokens designed to connect you with rewards, access, and growth inside our AI-driven platform</p>
 
-          <div className="flex gap-11 mt-[160px] pb-[195px]">
+          <div className="flex gap-16 mt-[180px] pb-[195px]">
             
             <div className="relative flex">
               
@@ -358,10 +359,10 @@ export default function Home() {
 
             </div>
 
-            <div className="right-col">
+            <div className="right-col pt-11">
               <p className="font-semibold text-5xl text-center leading-20 text-golden max-w-[500px]">Collect. Connect. Grow with AI</p>
               
-              <div className="flex justify-center gap-9 mt-[130px]">
+              <div className="flex justify-center gap-9 mt-[46px]">
                 <YellowButton href="/" className="shadow-lg">Mint Now</YellowButton>
                 <BlackButton href="/" className="flex gap-1 items-center justify-center"><span>Learn more</span> <Image alt="right angle" src="/images/angle-right.png" width={16} height={16} /></BlackButton>
               </div>
@@ -372,9 +373,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="sol mt-19">
+      <section className="sol mt-[275px]">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-7">
+          <div className="grid grid-cols-1 md:grid-cols-7 items-center">
             
             <div className="col-span-4 ">
               
@@ -383,10 +384,10 @@ export default function Home() {
                 <Image src="/images/brain.png" alt="Clock icon" width={28} height={28} />
               </div>
 
-              <h2 className="text-big font-semibold  mb-5 text-golden">What Is SŌL?</h2>
+              <h2 className="text-big font-semibold mt-2  mb-7.5 text-golden">What Is SŌL?</h2>
               <p className="sub_text text-2xl ">The consciousness that orchestrates your AI workforce. SŌL analyzes your business, assigns the right agents, and optimizes your operations with sacred precision.</p>
 
-              <ul className="sol_list flex flex-col gap-10 mt-20">
+              <ul className="sol_list flex flex-col gap-10 mt-17.5">
                 <li className="flex items-center gap-5 text-2xl  ">
                   <Image src="/images/golden-star.png" alt="Star icon" width={20} height={20} />
                   <span>Diagnoses your business automatically</span>
@@ -410,7 +411,7 @@ export default function Home() {
 
               </ul>
 
-              <YellowButton className="flex gap-2 items-center mt-14"><span>Ask SOL how we can help  your business</span> <Image src="/images/angle-right-black.png" alt="Angle right" width={24} height={24} />  </YellowButton>
+              <YellowButton className="flex gap-2 items-center mt-14 !rounded-2xl !text-[22px]"><span>Ask SOL how we can help  your business</span> <Image src="/images/angle-right-black.png" alt="Angle right" width={24} height={24} />  </YellowButton>
 
             </div>
             
@@ -421,12 +422,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="savings mt-19">
+      <section className="savings mt-[174px]">
         <div className="container">
-          <h2 className="font-semibold text-5xl text-center leading-20 text-golden mb-5">This isn't theory — it's already saving teams 40+ hours/week</h2>
+          <h2 className="font-semibold text-5xl text-center leading-20 text-golden mb-5 tracking-wider">This isn't theory — it's already saving teams 40+ hours/week</h2>
           <p className="sub_text text-2xl text-center">Real results from businesses that have activated their AI workforce.</p>
 
-          <div className="savings_col_wrap flex justify-between gap-11 mt-[170px]">
+          <div className="savings_col_wrap flex justify-between gap-11 mt-[150px]">
             
             <div className="savings_col">
               <p className="font-semibold text-[76px] text-center">40+</p>
@@ -444,9 +445,9 @@ export default function Home() {
           </div>
 
           <div className="savings_cta_wrap flex justify-center gap-19 mt-22">
-            <YellowButton className="flex gap-1 items-center"><Image src="/images/video_icon.png" alt="video icon" width={18} height={18} /> <span>Watch Live Demo</span> </YellowButton>
+            <YellowButton className="flex gap-1 items-center !rounded-2xl !text-[22px]"><Image src="/images/video_icon.png" alt="video icon" width={18} height={18} /> <span>Watch Live Demo</span> </YellowButton>
 
-            <BlackButton className="">Read Success Stories</BlackButton>
+            <BlackButton className="!rounded-2xl !text-[22px]">Read Success Stories</BlackButton>
           </div>
 
 
@@ -455,14 +456,14 @@ export default function Home() {
       </section>
 
 
-      <section className="savings mt-24">
+      <section className="savings mt-[233px]">
         <div className="container">
-          <h2 className="font-semibold text-5xl text-center leading-20 text-golden mb-5">Connect Your Digital Wallet</h2>
-          <p className="sub_text text-2xl text-center">Securely manage your crypto assets, track your earnings, and explore your NFT collection with Harmonix.</p>
+          <h2 className="font-semibold text-5xl text-center leading-20 text-golden mb-5 tracking-wider">Connect Your Digital Wallet</h2>
+          <p className="sub_text text-2xl text-center max-w-[992px] w-full mx-auto">Securely manage your crypto assets, track your earnings, and explore your NFT collection with Harmonix.</p>
 
 
-          <div className="savings_cta_wrap flex justify-center gap-19 mt-22">
-            <YellowButton className="flex gap-1 items-center"><Image src="/images/wallet.png" alt="video icon" width={18} height={18} /> <span>Connect Wallet</span> </YellowButton>
+          <div className="savings_cta_wrap flex justify-center gap-19 mt-[55px]">
+            <YellowButton className="flex gap-1 items-center !rounded-2xl !text-[22px]"><Image src="/images/wallet.png" alt="video icon" width={18} height={18} /> <span>Connect Wallet</span> </YellowButton>
           </div>
 
 
@@ -495,6 +496,29 @@ export default function Home() {
 
 
           </div>
+
+        </div>
+      </section>
+
+      <section className="home_newsletter mt-[220px]">
+        <div className="container">
+          <h2 className="font-semibold text-big text-center leading-20 text-golden mb-9 tracking-wider">Get Started with Harmonix</h2>
+          <p className="sub_text text-2xl text-center">Enter your details below to access our investor brochure</p>
+
+          <form className="mt-[90px] block">
+            <div className="form_row flex items-center bg-[#D9D9D9]/10 rounded-xl w-full max-w-[1192px] mx-auto relative">
+              <input name="email" autoComplete="false" className="w-full h-[77px] pl-10" placeholder="Email" type="email" />
+              <button className="cursor-pointer absolute -translate-y-1/2 top-1/2 right-6"  type="submit"><Image src="/images/circular-submit.png" alt="Submit button" width={67} height={60} /></button>
+            </div>
+          </form>
+
+          <div className="download_wrap mt-18 ">
+            <YellowButton className="flex gap-1 items-center mx-auto tracking-wide !py-5">
+              <span>Download Investor Check PDF</span>
+              <Image src="/images/download.png" width={26} height={26} alt="download button" />
+            </YellowButton>
+          </div>
+
 
         </div>
       </section>

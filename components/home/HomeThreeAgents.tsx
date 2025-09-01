@@ -69,7 +69,7 @@ export default function HomeThreeAgents() {
 
   return (
     <>
-      <div className="hidden xl:flex justify-center py-12">
+      <div className="hidden xl:flex justify-center pt-24">
         {/* Left column */}
         <div className="flex flex-col gap-19 col-span-3 max-w-[346px]">
           {agents.map((agent) => (
@@ -77,7 +77,7 @@ export default function HomeThreeAgents() {
             <button
               key={agent.id}
               onClick={() => setSelected(agent.id)}
-              className={`rounded-xl px-6 py-9 text-left  transition home_agent_index border-[0.7px] bg-[#D9D9D9]/10  ${
+              className={`rounded-2xl px-6 pt-6 pb-10 text-left  transition home_agent_index border-[0.7px] bg-[#D9D9D9]/10  ${
                 selected === agent.id
                   ? "border-golden"
                   : "border-[#095552CF]"
@@ -120,51 +120,51 @@ export default function HomeThreeAgents() {
         </div>
 
         {/* Right column */}
-        <div className="rounded-xl border border-gray-700 bg-black/40 pt-19 pb-15 px-14 col-span-4 w-full max-w-[576px]">
-          <h2 className="text-golden text-4xl mb-11 font-semibold">
+        <div className="rounded-2xl border border-gray-700 bg-black/40 pt-16 pb-15 px-14 col-span-4 w-full max-w-[576px]">
+          <h2 className="text-golden text-4xl mb-9 font-semibold">
             {current.title}
           </h2>
           <p className="text-2xl font-semibold">{current.desc}</p>
 
-          <div className="flex gap-6 justify-between mt-11">
+          <div className="flex gap-6 justify-between mt-10">
             
             <div>
-              <p className="text-2xl font-medium text-center">{current.cost}</p>
+              <p className="text-2xl font-medium text-center mb-2">{current.cost}</p>
               <p className="text-golden text-lg text-center ">Monthly Cost</p>
             </div>          
             <div>
-              <p className="text-2xl font-medium text-center">{current.token}</p>
+              <p className="text-2xl font-medium text-center mb-2">{current.token}</p>
               <p className="text-golden text-lg text-center ">Token Usage (Moderate)</p>
             </div>          
             <div>
-              <p className="text-2xl font-medium text-center">{current.cost}</p>
+              <p className="text-2xl font-medium text-center mb-2">{current.cost}</p>
               <p className="text-golden text-lg text-center ">Time Saved</p>
             </div>
 
             
           </div>
 
-          <div>
+          <div className="mt-14">
             <p className="text-golden text-xl font-medium">Integrations:</p>
             <div className="flex gap-15 mt-6">
               {current.integrations.map((item,idx) => (
-                <button key={idx} className="border border-golden rounded-[40px] px-7 py-3" >{item}</button>
+                <button key={idx} className="border border-golden rounded-[40px] px-7 py-2" >{item}</button>
               ))}
               
             </div>
           </div>
 
-          <div className="mt-11">
+          <div className="mt-14">
             <h4 className="text-2xl font-semibold mb-6">Key Capabilities:</h4>
             <ul className="list-disc list-inside text-golden text-lg font-semibold columns-2">
               {current.capabilities.map((cap, i) => (
-                <li key={i} className="flex gap-1 items-center mb-4"><Image src="/images/circle-tick.png" alt="tich mark" width={17} height={17} />{cap}</li>
+                <li key={i} className="flex gap-1 items-center mb-6"><Image src="/images/circle-tick.png" alt="tich mark" width={17} height={17} />{cap}</li>
               ))}
             </ul>
           </div>
 
 
-          <div className="mt-11 flex gap-6 justify-center">
+          <div className="mt-3.5 flex gap-6 justify-center">
             <Link className="text-2xl font-semibold bg-golden rounded-[20px]  px-6 py-4 text-siteBlack border border-golden hover:bg-siteBlack hover:text-golden transition-all duration-300" href={current.deploy}>Deploy Agent</Link>
 
             <Link className="text-2xl font-semibold flex gap-2 items-center rounded-[20px] px-6 py-4 border border-golden text-offwhite hover:bg-golden hover:text-siteBlack transition-all duration-300" href={current.learnMore}><span>Learn More</span> <Image src="/images/angle-right.png" alt="Right angle icon" width={20} height={20} /> </Link>
@@ -203,17 +203,17 @@ export default function HomeThreeAgents() {
               
             </div>
 
-            <div>
+            <div className="mt-10">
               <p className="text-golden text-xl font-medium">Integrations:</p>
               <div className="flex gap-15 mt-6">
                 {agent.integrations.map((item,idx) => (
-                  <button key={idx} className="border border-golden rounded-[40px] px-7 py-3" >{item}</button>
+                  <button key={idx} className="border border-golden rounded-[40px] px-7 py-2" >{item}</button>
                 ))}
                 
               </div>
             </div>
 
-            <div className="mt-11">
+            <div className="mt-14">
               <h4 className="text-2xl font-semibold mb-6">Key Capabilities:</h4>
               <ul className="list-disc list-inside text-golden text-lg font-semibold columns-2">
                 {agent.capabilities.map((cap, i) => (
@@ -223,7 +223,7 @@ export default function HomeThreeAgents() {
             </div>
 
 
-            <div className="mt-11 flex  gap-6 justify-center">
+            <div className="mt-3.5 flex  gap-6 justify-center">
               <Link className="text-2xl font-semibold bg-golden rounded-[20px]  p-6 text-siteBlack border border-golden hover:bg-siteBlack hover:text-golden transition-all duration-300" href={current.deploy}>Deploy Agent</Link>
 
               <Link className="text-2xl font-semibold flex gap-2 items-center rounded-[20px] p-6 border border-golden text-offwhite hover:bg-golden hover:text-siteBlack transition-all duration-300" href={current.learnMore}><span>Learn More</span> <Image src="/images/angle-right.png" alt="Right angle icon" width={20} height={20} /> </Link>
