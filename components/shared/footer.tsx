@@ -22,7 +22,7 @@ const Footer = () => {
 
             </div>
 
-            <div className="col-span-5 flex gap-14 justify-between w-full max-w-[700px]">
+            <div className="col-span-5 flex flex-col md:flex-row md:flex-wrap gap-14 justify-between w-full max-w-[700px]">
               
               <div className="">
                 <p className="footer_col_header font-medium text-lg mb-9.5">Explore</p>

@@ -17,7 +17,7 @@ const Wallet = () => {
       </div>
 
 
-      <div className="wallet_col_wrap flex justify-between gap-11 mt-[170px]">
+      <div className="wallet_col_wrap flex flex-col md:flex-row justify-between gap-11 mt-[170px]">
         
         <div className="savings_col relative">
           <Image className="absolute w-full -top-24 -left-24 z-10" src="/images/wallet-glow.png" width={142} height={57} alt="background glow" />

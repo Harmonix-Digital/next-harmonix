@@ -2,7 +2,15 @@ import React from 'react'
 
 const MarketPage = () => {
   return (
-    <div>MarketPage</div>
+    <>
+    <section>
+      <div className="container">
+      <div>MarketPage</div>
+
+      </div>
+    </section>
+    </>
+    
   )
 }
 

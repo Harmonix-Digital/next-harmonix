@@ -24,7 +24,7 @@ const Header = () => {
               <Image src="/images/logo.png" alt="Harmonix Logo" width={54} height={54} />
             </Link>
           </div>
-          <div className="main_nav">
+          <div className="main_nav hidden lg:block">
             <nav className='flex gap-9 items-center font-medium text-lg '>
 
             {navItems.map((item) => (
