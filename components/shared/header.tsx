@@ -49,7 +49,7 @@ const Header = () => {
                 <p>Log in</p>
                 <Image src='/images/arrow-top-right.png' alt="Login icon"  width={18} height={18}/>
               </Link>
-              <Link href="/" className='bg-green/89 rounded-3xl px-4 py-3 hover:bg-white hover:text-green transition-colors duration-300 font-semibold' >Join Waitlist</Link>
+              <Link href="/join" className='bg-green/89 rounded-3xl px-4 py-3 hover:bg-white hover:text-green transition-colors duration-300 font-semibold' >Join Waitlist</Link>
             </ul>
           </div>
         </div>

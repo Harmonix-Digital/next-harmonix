@@ -4,7 +4,7 @@ import YellowButton from "@/components/ui/YellowButton";
 
 const Sol = () => {
   return (
-<section className="sol mt-[275px]">
+      <section className="sol mt-19 lg:mt-[275px]">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-7 items-center">
             
@@ -15,26 +15,26 @@ const Sol = () => {
                 <Image src="/images/brain.png" alt="Clock icon" width={28} height={28} />
               </div>
 
-              <h2 className="text-big font-semibold mt-2  mb-7.5 text-golden">What Is SŌL?</h2>
-              <p className="sub_text text-2xl ">The consciousness that orchestrates your AI workforce. SŌL analyzes your business, assigns the right agents, and optimizes your operations with sacred precision.</p>
+              <h2 className="text-3xl md:text-4xl lg:text-big font-semibold mt-6  mb-7.5 text-golden">What Is SŌL?</h2>
+              <p className="sub_text text-lg lg:text-2xl ">The consciousness that orchestrates your AI workforce. SŌL analyzes your business, assigns the right agents, and optimizes your operations with sacred precision.</p>
 
               <ul className="sol_list flex flex-col gap-10 mt-17.5">
-                <li className="flex items-center gap-5 text-2xl  ">
+                <li className="flex items-center gap-5 text-lg lg:text-2xl  ">
                   <Image src="/images/golden-star.png" alt="Star icon" width={20} height={20} />
                   <span>Diagnoses your business automatically</span>
                 </li>
 
-                <li className="flex items-center gap-5 text-2xl  ">
+                <li className="flex items-center gap-5 text-lg lg:text-2xl  ">
                   <Image src="/images/golden-star.png" alt="Star icon" width={20} height={20} />
                   <span>Intelligent agent assignment logic</span>
                 </li>
                 
-                <li className="flex items-center gap-5 text-2xl  ">
+                <li className="flex items-center gap-5 text-lg lg:text-2xl  ">
                   <Image src="/images/golden-star.png" alt="Star icon" width={20} height={20} />
                   <span>Real-time ROI calculator</span>
                 </li>
 
-                <li className="flex items-center gap-5 text-2xl  ">
+                <li className="flex items-center gap-5 text-lg lg:text-2xl  ">
                   <Image src="/images/golden-star.png" alt="Star icon" width={20} height={20} />
                   <span>Adaptive learning from patterns</span>
                 </li>
@@ -42,7 +42,7 @@ const Sol = () => {
 
               </ul>
 
-              <YellowButton className="flex gap-2 items-center mt-14 !rounded-2xl !text-[22px]"><span>Ask SOL how we can help  your business</span> <Image src="/images/angle-right-black.png" alt="Angle right" width={24} height={24} />  </YellowButton>
+              <YellowButton className="flex gap-2 items-center mt-14 !rounded-2xl lg:!text-[22px]"><span>Ask SOL how we can help  your business</span> <Image src="/images/angle-right-black.png" alt="Angle right" width={24} height={24} />  </YellowButton>
 
             </div>
             

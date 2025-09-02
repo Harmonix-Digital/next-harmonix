@@ -178,63 +178,67 @@ export default function HomeThreeAgents() {
       </div>
 
       <div className="py-12 flex xl:hidden flex-col gap-14 justify-center items-center">
+
           {agents.map(agent => (
-            <div key={agent.id} className="rounded-xl border border-gray-700 bg-black/40 pt-19 pb-15 px-14 col-span-4 w-full max-w-[576px]">
-            <h2 className="text-golden text-4xl mb-11 font-semibold">
-              {current.title}
-            </h2>
-            <p className="text-2xl font-semibold">{agent.desc}</p>
+            <div key={agent.id} className="rounded-xl border border-gray-700 bg-black/40 pt-6 lg:pt-19 pb-15 px-5 lg:px-14 col-span-4 w-full max-w-[576px]">
+              <h2 className="text-golden text-2xl lg:text-4xl mb-11 font-semibold text-center">
+                {current.title} 
+              </h2>
+              <p className="text-lg lg:text-xl lg:text-2xl font-semibold text-center">{agent.desc}</p>
 
-            <div className="flex flex-col md:flex-row gap-6 justify-between mt-11">
-              
-              <div>
-                <p className="text-2xl font-medium text-center">{agent.cost}</p>
-                <p className="text-golden text-lg text-center ">Monthly Cost</p>
-              </div>          
-              <div>
-                <p className="text-2xl font-medium text-center">{agent.token}</p>
-                <p className="text-golden text-lg text-center ">Token Usage (Moderate)</p>
-              </div>          
-              <div>
-                <p className="text-2xl font-medium text-center">{agent.cost}</p>
-                <p className="text-golden text-lg text-center ">Time Saved</p>
-              </div>
+              <div className="flex flex-col md:flex-row gap-6 justify-between mt-11">
+                
+                <div>
+                  <p className="text-xl lg:text-2xl font-medium text-center">{agent.cost}</p>
+                  <p className="text-golden text-lg text-center ">Monthly Cost</p>
+                </div>          
+                <div>
+                  <p className="text-xl lg:text-2xl font-medium text-center">{agent.token}</p>
+                  <p className="text-golden text-lg text-center ">Token Usage (Moderate)</p>
+                </div>          
+                <div>
+                  <p className="text-xl lg:text-2xl font-medium text-center">{agent.cost}</p>
+                  <p className="text-golden text-lg text-center ">Time Saved</p>
+                </div>
 
-              
-            </div>
-
-            <div className="mt-10">
-              <p className="text-golden text-xl font-medium">Integrations:</p>
-              <div className="flex flex-col md:flex-row gap-15 mt-6">
-                {agent.integrations.map((item,idx) => (
-                  <button key={idx} className="border border-golden rounded-[40px] px-7 py-2" >{item}</button>
-                ))}
                 
               </div>
-            </div>
 
-            <div className="mt-14">
-              <h4 className="text-2xl font-semibold mb-6">Key Capabilities:</h4>
-              <ul className="list-disc list-inside text-golden text-lg font-semibold columns-2">
-                {agent.capabilities.map((cap, i) => (
-                  <li key={i} className="flex gap-1 items-center mb-4"><Image src="/images/circle-tick.png" alt="tich mark" width={17} height={17} />{cap}</li>
-                ))}
-              </ul>
-            </div>
+              <div className="mt-10">
+                <p className="text-golden text-xl font-medium">Integrations:</p>
+                <div className="flex flex-col md:flex-row gap-6 lg:gap-15 mt-6">
+                  {agent.integrations.map((item,idx) => (
+                    <button key={idx} className="border border-golden rounded-[40px] px-7 py-2" >{item}</button>
+                  ))}
+                  
+                </div>
+              </div>
+
+              <div className="mt-14">
+                <h4 className="text-xl lg:text-2xl font-semibold mb-6">Key Capabilities:</h4>
+                <ul className="list-disc list-inside text-golden text-lg font-semibold lg:columns-2">
+                  {agent.capabilities.map((cap, i) => (
+                    <li key={i} className="flex gap-1 items-center mb-4"><Image src="/images/circle-tick.png" alt="tich mark" width={17} height={17} />{cap}</li>
+                  ))}
+                </ul>
+              </div>
 
 
-            <div className="mt-3.5 flex flex-col md:flex-row gap-6 justify-center">
-              <Link className="text-2xl font-semibold bg-golden rounded-[20px]  p-6 text-siteBlack border border-golden hover:bg-siteBlack hover:text-golden transition-all duration-300" href={current.deploy}>Deploy Agent</Link>
+              <div className="mt-11 lg:mt-3.5 flex flex-col md:flex-row gap-6 justify-center ">
+                <Link className="text-xl lg:text-2xl font-semibold bg-golden rounded-[20px]  p-3 lg:p-6 text-siteBlack border border-golden hover:bg-siteBlack hover:text-golden transition-all duration-300 text-center" href={current.deploy}>Deploy Agent</Link>
 
-              <Link className="text-2xl font-semibold flex gap-2 items-center rounded-[20px] p-6 border border-golden text-offwhite hover:bg-golden hover:text-siteBlack transition-all duration-300" href={current.learnMore}><span>Learn More</span> <Image src="/images/angle-right.png" alt="Right angle icon" width={20} height={20} /> </Link>
-            </div>
-
-
+                <Link className="text-xl lg:text-2xl font-semibold flex gap-2 items-center rounded-[20px] p-3 lg:p-6 border border-golden text-offwhite hover:bg-golden hover:text-siteBlack transition-all duration-300 justify-center " href={current.learnMore}><span>Learn More</span> <Image src="/images/angle-right.png" alt="Right angle icon" width={20} height={20} /> </Link>
+              </div>
 
 
 
-          </div>            
+
+
+            </div>            
           ))}
+
+
+
       </div>
     </>
   );

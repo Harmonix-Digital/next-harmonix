@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const HomeTiers = () => {
   return (
-<section className="home_tiers mt-19">
+      <section className="home_tiers mt-19">
         <div className="container !max-w-[1380px]">
           
           <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-[15px] w-[296px] mx-auto text-golden text-lg font-semibold">
@@ -13,11 +13,11 @@ const HomeTiers = () => {
             <Image src="/images/clock.png" alt="Clock icon" width={28} height={28} />
           </div>
 
-          <h2 className="text-big font-semibold text-center mb-5 text-golden">Investment Tiers
+          <h2 className="text-3xl md:text-4xl lg:text-big font-semibold text-center mb-5 text-golden">Investment Tiers
           </h2>
-          <p className="sub_text text-2xl text-center">Limited time offer - 30% discount. Secure your spot before rates increase.</p>
+          <p className="sub_text texl-lg lg:text-2xl text-center">Limited time offer - 30% discount. Secure your spot before rates increase.</p>
 
-          <div className="tiers_wrap flex flex-col md:flex-row md:flex-wrap gap-4 items-center justify-center mt-24">
+          <div className="tiers_wrap flex flex-col md:flex-row md:flex-wrap gap-12 lg:gap-4 items-center justify-center mt-11 lg:mt-24">
             
             <div className="tier flex-1 bg-[#D9D9D9]/10 rounded-[10px] flex flex-col items-center p-7">
               <p className="text-golden text-[28px] font-semibold mb-3">Starter</p>

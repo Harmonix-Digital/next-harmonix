@@ -5,11 +5,12 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <>
-      <section className="footer mt-[170px]">
+      <section className="footer mt-24 lg:mt-[170px]">
         <div className="container">
-          <div className="footer_top grid gap-14 grid-cols-1 md:grid-cols-8">
+          
+          <div className="footer_top grid gap-14 grid-cols-1 md:grid-cols-8 border-b border-white pb-16">
             
-            <div className="logo_col col-span-3">
+            <div className="logo_col col-span-6 md:col-span-3">
               <Image src="/images/footer-logo.png" alt="footer logo" width={165} height={60} />
               <p className="text-[15px] leading-6 mt-8">Your trusted financial partner—an AI-driven platform with expert agents trained for finance, operations, and client support, empowering associations and organizations to manage finances effortlessly and scale sustainably.</p>
               
@@ -25,8 +26,8 @@ const Footer = () => {
             <div className="col-span-5 flex flex-col md:flex-row md:flex-wrap gap-14 justify-between w-full max-w-[700px]">
               
               <div className="">
-                <p className="footer_col_header font-medium text-lg mb-9.5">Explore</p>
-                <ul className='flex flex-col gap-6'>
+                <p className="footer_col_header font-medium text-lg mb-2 lg:mb-9.5">Explore</p>
+                <ul className='flex flex-col gap-2 lg:gap-6'>
                   <li>
                     <Link className='' href="/">About</Link>
                   </li>
@@ -38,8 +39,8 @@ const Footer = () => {
 
 
               <div className="">
-                <p className="footer_col_header font-medium text-lg mb-9.5">Useful Links</p>
-                <ul className='flex flex-col gap-6'>
+                <p className="footer_col_header font-medium text-lg mb-2 lg:mb-9.5">Useful Links</p>
+                <ul className='flex flex-col  gap-2 lg:gap-6'>
                   <li>
                     <Link className='' href="/">Support</Link>
                   </li>
@@ -48,8 +49,8 @@ const Footer = () => {
 
 
               <div className="">
-                <p className="footer_col_header font-medium text-lg mb-9.5">Contact</p>
-                <ul className='flex flex-col gap-6'>
+                <p className="footer_col_header font-medium text-lg mb-2 lg:mb-9.5">Contact</p>
+                <ul className='flex flex-col  gap-2 lg:gap-6'>
                   <li><p className="">128 Maplewood Avenue,  Canada</p></li>
                   <li><p className=""> <a href="tel:+14165552378">+1 (416) 555-2378</a> </p></li>
                   <li><p className=""><a href="mailto:info@harmonixdigital.com">info@harmonixdigital.com</a></p></li>
@@ -59,13 +60,13 @@ const Footer = () => {
             </div>
 
 
-
-
-
-
-
-
           </div>
+
+          <div className="footer_bottom pt-20">
+            <p className="text-center mb-11">Copyright © 2025 harmonixdigital.com.ng All rights reserved</p>
+          </div>
+
+
         </div>
       </section>
     </>

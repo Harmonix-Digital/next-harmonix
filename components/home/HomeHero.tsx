@@ -13,15 +13,15 @@ const HomeHero = () => {
           <div className="home_hero_wrap grid grid-cols-1 lg:grid-cols-12 relative z-20 items-center">
             
             <div className="col-span-6 order-2 lg:order-1">
-              <h1 className="font-semibold text-golden text-6xl leading-20">The elite, AI automation platform</h1>
-              <p className="text-2xl leading-[34px] mt-[54px] mb-[64px]">Transform your business with advanced AI agents-powered by blockchain innovation</p>
+              <h1 className="font-semibold text-golden text-4xl md:text-5xl lg:text-6xl leading-9 lg:leading-20">The elite, AI automation platform</h1>
+              <p className="text-lg lg:text-2xl leading-[34px] mt-5 lg:mt-[54px] mb-[64px]">Transform your business with advanced AI agents-powered by blockchain innovation</p>
 
-              <div className="hero_cta_wrap flex flex-col md:flex-row gap-11 text-2xl font-semibold">
-                <Link href="/" className="flex gap-2 bg-white rounded-4xl pt-1 pb-0 pl-[3px] pr-4 text-black items-center" >
+              <div className="hero_cta_wrap flex flex-col md:flex-row gap-11 text-xl lg:text-2xl font-semibold">
+                <Link href="/" className="flex gap-2 bg-white rounded-4xl pt-1 pb-0 pl-[3px] pr-4 text-black items-center justify-center" >
                   <Image src="/images/green-circle.png" alt="Join icon" width={61} height={56}/>
                   <span>Activate Your Agent</span>
                 </Link>
-                <Link href="/" className="flex gap-1 items-center">
+                <Link href="/" className="flex gap-1 items-center justify-center">
                   <span>Join Waitlist</span>
                   <Image src="/images/arrow-down.png" alt="Down arrow" width={22} height={22} />
                 
@@ -30,11 +30,11 @@ const HomeHero = () => {
             </div>
 
             <div className="col-span-6 order-1 lg:order-2">
-              <Image className='max-w-full' src="/images/hero-img.png" alt="Ai Image" height={664} width={656}  />
+              <Image className='max-w-full mx-auto' src="/images/hero-img.png" alt="Ai Image" height={664} width={656}  />
             </div>
           </div>
 
-          <div className="hero_blocks_wrap flex flex-col md:flex-row gap-4 justify-between items-center relative z-20 mt-22">
+          <div className="hero_blocks_wrap flex flex-col md:flex-row gap-7 lg:gap-4 justify-between items-center relative z-20 mt-22">
             
             <div className="home_hero_block">
               <p className="text-3xl font-semibold text-center text-golden">Early Adopters</p>

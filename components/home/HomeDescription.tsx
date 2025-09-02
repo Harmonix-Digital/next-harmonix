@@ -4,17 +4,17 @@ import Link from 'next/link'
 
 const HomeDescription = () => {
   return (
-<section className="home_desc mt-21">
+      <section className="home_desc mt-21">
         <div className="container">
-          <h2 className="text-big font-semibold text-center mb-5">Design a business that runs <span className="text-golden">itself</span> </h2>
-          <p className="sub_text text-2xl text-center">A full AI operating system for teams who value freedom, clarity, and flow.</p>
+          <h2 className="text-3xl md:text-4xl lg:text-big font-semibold text-center mb-5">Design a business that runs <span className="text-golden">itself</span> </h2>
+          <p className="sub_text text-xl lg:text-2xl text-center">A full AI operating system for teams who value freedom, clarity, and flow.</p>
           
 
-          <div className="home_desc_blocks_wrap flex flex-col lg:flex-row gap-6 mt-19">
+          <div className="home_desc_blocks_wrap flex flex-col lg:flex-row gap-9 lg:gap-6 mt-19">
             
             <div className="home_desc_block rounded-3xl bg-[#D9D9D91A]  pt-0 pb-9">
               <div className="flex justify-end">
-                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-[27px]">Agent Intelligence</p>
+                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-xl lg:text-[27px]">Agent Intelligence</p>
               </div>
 
               <div className="px-7 mt-9">
@@ -48,7 +48,7 @@ const HomeDescription = () => {
 
             <div className="home_desc_block rounded-3xl bg-[#D9D9D91A]  pt-0 pb-9">
               <div className="flex justify-end">
-                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-[27px]">Seamless Integration</p>
+                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-xl lg:text-xl lg:text-[27px]">Seamless Integration</p>
               </div>
 
               <div className="px-7 mt-9">
@@ -82,7 +82,7 @@ const HomeDescription = () => {
 
             <div className="home_desc_block rounded-3xl bg-[#D9D9D91A]  pt-0 pb-9">
               <div className="flex justify-end">
-                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-[27px]">Time Sovereignty</p>
+                <p className="inline-block px-9 py-5 rounded-2xl bg-[#0F1115] text-golden font-semibold text-xl lg:text-[27px]">Time Sovereignty</p>
               </div>
 
               <div className="px-7 mt-9">

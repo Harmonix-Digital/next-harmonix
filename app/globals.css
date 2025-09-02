@@ -30,6 +30,7 @@ body {
 @theme {
   --font-jakarta: var(--font-jakarta);
   --text-big: 4rem;
+  --text-xlbig:22px;
   --tracking-extra: 0.015em;
   --rounded-big:2.5rem;
 }
@@ -39,6 +40,7 @@ body {
   --color-green:  #095552;
   --color-offwhite:  #F5F5F5;
   --color-siteBlack:  #0F1115;
+  --color-dimWhite:  #C4C4C4;
   --breakpoint-xs: 30rem;
 }
 
@@ -47,7 +49,8 @@ section{
   padding-right: 20px;
 
   @media only screen and (max-width:1240px){
-    padding: 0 36px;
+    padding-left:36px;
+    padding-right: 36px;
   }
 }
 
@@ -68,3 +71,7 @@ section{
 /* *{
   border:1px solid red;
 } */
+
+.flag-button .selected-flag:hover{
+  background:none !important;
+}
