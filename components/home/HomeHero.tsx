@@ -17,7 +17,7 @@ const HomeHero = () => {
               <p className="text-lg lg:text-2xl leading-[34px] mt-5 lg:mt-[54px] mb-[64px]">Transform your business with advanced AI agents-powered by blockchain innovation</p>
 
               <div className="hero_cta_wrap flex flex-col md:flex-row gap-11 text-xl lg:text-2xl font-semibold">
-                <Link href="/" className="flex gap-2 bg-white rounded-4xl pt-1 pb-0 pl-[3px] pr-4 text-black items-center justify-center" >
+                <Link href="/activate-agent" className="flex gap-2 bg-white rounded-4xl pt-1 pb-0 pl-[3px] pr-4 text-black items-center justify-center" >
                   <Image src="/images/green-circle.png" alt="Join icon" width={61} height={56}/>
                   <span>Activate Your Agent</span>
                 </Link>

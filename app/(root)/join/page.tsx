@@ -5,15 +5,16 @@ import Form from '@/components/waitlist/Form'
 const JoinPage = () => {
   return (
     <>
-      <section className='pt-24'>
-        <div className="container relative">
+      <section className='pt-24 relative'>
+        <Image className='absolute top-0 right-[7%] z-10 ' src="/images/access-glow.png" alt="Access glow image" width={1000} height={300} />
+        <div className="container relative z-20">
           
           <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-6 py-[18px] mx-auto text-golden text-xlbig font-semibold max-w-[296px] relative z-20">
             <span>Available Early 2026</span>
             <Image src="/images/clock.png" alt="Clock icon" width={28} height={28} />
           </div>
 
-          <Image className='absolute top-0 right-0 z-10 max-w-[600px]' src="/images/access-glow.png" alt="Access glow image" width={831} height={222} />
+          
 
           <div className="page_hero relative z-20">
             
