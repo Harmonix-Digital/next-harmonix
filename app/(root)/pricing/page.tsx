@@ -3,10 +3,9 @@ import React from 'react'
 const PricingPage = () => {
   return (
     <>
-    <section>
+    <section className='market_hero'>
       <div className="container">
-      <div>PricingPage</div>
-
+        Pricing Page
       </div>
     </section>
     </>

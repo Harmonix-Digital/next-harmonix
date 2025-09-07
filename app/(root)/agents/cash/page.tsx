@@ -6,11 +6,12 @@ import BlackButton from '@/components/ui/BlackButton'
 const AgentCashPage = () => {
   return (
     <>
-      <section className='agent_details_hero'>
-        <div className="container">
+      <section className='agent_details_hero relative'>
+        <Image className='absolute right-0' src="/images/oval-glow.png" alt="Background image" width={300} height={200} />
+        <div className="container relative z-20">
           <div className="single_agent pt-18 pb-12 px-10 rounded-[10px]">
             
-            <div className="agent_top flex flex-col md:flex-row justify-between  gap-9">
+            <div className="agent_top flex flex-col items-center md:items-start md:flex-row justify-between  gap-9">
               <div className="image_col">
                 <Image src="/images/agent-cash.png" alt="Agent Icon" width={110} height={110} />
               </div>
@@ -163,6 +164,73 @@ const AgentCashPage = () => {
           </div>
 
 
+        </div>
+      </section>
+
+      <section className='reviews mt-10'>
+        <div className="container">
+          <p className="text-xl font-semibold mb-5">Reviews</p>
+          <div className="flex gap-4">
+            <Image src="/images/yellow-star.png" alt="Star" width={30} height={30} />
+            <div className="flex gap-1 items-baseline">
+              <span className='font-extrabold text-2xl'>4.8</span>
+              <span className='text-xs'>(from early beta testers)</span>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row mt-4 gap-10">
+
+            <div className="single_testimonial bg-[#D9D9D9]/10 px-4 py-8 md:px-[60px] md:py-13 rounded-xl md:rounded-[30px]">
+              <p className='mb-4'>“CA$H booked us 12 qualified calls in the first two weeks — something our team struggled with for months. Absolute game changer.”</p>
+              <p className="text-right"> – Startup Founder, B2B SaaS</p>
+            </div>
+
+            <div className="single_testimonial bg-[#D9D9D9]/10 px-4 py-8 md:px-[60px] md:py-13 rounded-xl md:rounded-[30px]">
+              <p className='mb-4'>“CA$H booked us 12 qualified calls in the first two weeks — something our team struggled with for months. Absolute game changer.”</p>
+              <p className="text-right"> – Startup Founder, B2B SaaS</p>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </section>
+
+      <section className="proof mt-10">
+        <div className="container">
+          <p className="text-xl font-semibold mb-7.5">Performance & Proof</p>
+          <div className="flex flex-col md:flex-row gap-10 md:gap-6">
+
+            <div className="flex flex-col items-center">
+              <Image src="/images/tick-yellow-white.png" alt="Check" width={30} height={30} />
+              <p className="mt-2.5 text-center">
+                +27% average lead conversion rate in pilot tests
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <Image src="/images/tick-yellow-white.png" alt="Check" width={30} height={30} />
+              <p className="mt-2.5 text-center">
+                +27% average lead conversion rate in pilot tests
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <Image src="/images/tick-yellow-white.png" alt="Check" width={30} height={30} />
+              <p className="mt-2.5 text-center">
+                +27% average lead conversion rate in pilot tests
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <Image src="/images/tick-yellow-white.png" alt="Check" width={30} height={30} />
+              <p className="mt-2.5 text-center">
+                +27% average lead conversion rate in pilot tests
+              </p>
+            </div>
+
+
+          </div>
         </div>
       </section>
 
