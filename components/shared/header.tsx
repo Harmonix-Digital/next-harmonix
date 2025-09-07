@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const navItems = [
   { name: "Home", path: "/" },
   { name: "Marketplace", path: "/market" },
-  { name: "Demo", path: "/demo" },
+  { name: "Demo", path: "/demo/cash" },
   { name: "Pricing", path: "/pricing" },
 ];
 
@@ -27,7 +27,7 @@ const Header = () => {
           <div className="main_nav hidden lg:block">
             <nav className='flex gap-9 items-center font-medium text-lg '>
 
-            {navItems.map((item) => (
+            {/* {navItems.map((item) => (
               <Link
                 key={item.path}
                 href={item.path}
@@ -39,7 +39,27 @@ const Header = () => {
               >
                 {item.name}
               </Link>
-            ))}
+            ))} */}
+
+            {navItems.map((item) => {
+              const isActive =
+                item.path === "/demo/cash"
+                  ? pathname.startsWith("/demo") // any /demo/* is active
+                  : pathname === item.path;
+
+              return (
+                <Link
+                  key={item.path}
+                  href={item.path}
+                  className={`hover:text-golden ${isActive ? "text-golden" : ""}`}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
+
+
+
 
             </nav>
           </div>

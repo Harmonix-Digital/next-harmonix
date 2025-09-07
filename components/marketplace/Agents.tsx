@@ -95,8 +95,8 @@ const AgentsList = ({agents } : AgentsListProps ) => {
       </section>
 
       <section className="sec_agents_grid mt-13 relative">
-        <Image className='absolute left-0 top-0 ' src="/images/market-bg-glow.png" alt="Background glow" width={957} height={763}  />
-        <div className="container">
+        <Image className='absolute z-10 left-0 top-0 ' src="/images/market-bg-glow.png" alt="Background glow" width={957} height={763}  />
+        <div className="container relative z-20">
           <div className="products_wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredAgents.map((agent,index) => (
               <div key={index} className="single_agent bg-[#D9D9D9]/10 rounded-[30px] px-9 pt-7.5 pb-9.5">
