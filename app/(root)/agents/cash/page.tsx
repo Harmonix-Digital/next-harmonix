@@ -22,7 +22,7 @@ const AgentCashPage = () => {
 
                 <div className="agent_bottom flex flex-col sm:flex-row gap-4 justify-start mt-10">
                   <YellowButton className='' href='/'>Deploy</YellowButton>
-                  <BlackButton className=''>Try Demo</BlackButton>
+                  <BlackButton href='/demo/cash'>Try Demo</BlackButton>
                 </div>
 
 

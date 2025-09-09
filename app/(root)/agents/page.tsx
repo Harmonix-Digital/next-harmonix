@@ -42,7 +42,7 @@ const ActivateAgent = () => {
 
             <div className="agent_bottom flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <YellowButton className='' href='/agents/cash'>View Details</YellowButton>
-              <BlackButton className=''>Try Demo</BlackButton>
+              <BlackButton className='' href="/demo/cash">Try Demo</BlackButton>
             </div>
 
 
@@ -67,7 +67,7 @@ const ActivateAgent = () => {
 
             <div className="agent_bottom flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <YellowButton className='' href='/agents/echo'>View Details</YellowButton>
-              <BlackButton className='' href="/">Try Demo</BlackButton>
+              <BlackButton className='' href="/demo/echo">Try Demo</BlackButton>
             </div>
 
 
@@ -92,7 +92,7 @@ const ActivateAgent = () => {
 
             <div className="agent_bottom flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <YellowButton className='' href='/agents/flow'>View Details</YellowButton>
-              <BlackButton className='' href="/">Try Demo</BlackButton>
+              <BlackButton className='' href="/demo/flow">Try Demo</BlackButton>
             </div>
 
 
@@ -117,7 +117,7 @@ const ActivateAgent = () => {
 
             <div className="agent_bottom flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <YellowButton className='' href='/agents/sol'>View Details</YellowButton>
-              <BlackButton className='' href="/">Try Demo</BlackButton>
+              <BlackButton className='' href="/demo/sol">Try Demo</BlackButton>
             </div>
 
 
@@ -141,7 +141,7 @@ const ActivateAgent = () => {
 
             <div className="agent_bottom flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <YellowButton className='' href='/agents/kairos'>View Details</YellowButton>
-              <BlackButton className='' href="/">Try Demo</BlackButton>
+              <BlackButton className='' href="/demo/kairos">Try Demo</BlackButton>
             </div>
 
           </div>
@@ -163,7 +163,7 @@ const ActivateAgent = () => {
 
             <div className="agent_bottom flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <YellowButton className='' href='/agents/grace'>View Details</YellowButton>
-              <BlackButton className='' href="/">Try Demo</BlackButton>
+              <BlackButton className='' href="/demo/grace">Try Demo</BlackButton>
             </div>
 
           </div>
