@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "mongoose": "^8.18.1",
     "next": "15.5.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-phone-input-2": "^2.15.1"
+    "react-phone-input-2": "^2.15.1",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

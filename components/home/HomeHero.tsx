@@ -30,7 +30,7 @@ const HomeHero = () => {
             </div>
 
             <div className="col-span-6 order-1 lg:order-2">
-              <Image className='max-w-full mx-auto' src="/images/hero-img.png" alt="Ai Image" height={664} width={656}  />
+              <Image className='max-w-full mx-auto' src="/images/home-hero.webp" alt="Ai Image" height={664} width={656}  />
             </div>
           </div>
 

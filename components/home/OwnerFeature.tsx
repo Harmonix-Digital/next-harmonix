@@ -23,8 +23,8 @@ const OwnerFeature = () => {
               
               <div className="single_card">
                 <div className=" bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative lg:-right-[15px]">
-                  <Image className='mx-auto' src="/images/token-img.png" width={258} height={261} alt="ownership image" />
-                  <p className="text-golden font-semibold">Harmonix Tokens 2</p>
+                  <Image className='mx-auto' src="/images/token-echo.png" width={258} height={261} alt="ownership image" />
+                  <p className="text-golden font-semibold">Echo Token</p>
                   <div className="flex justify-between">
                     
                     <div className="flex gap-1 items-center">
@@ -44,8 +44,8 @@ const OwnerFeature = () => {
 
               <div className="single_card">
                 <div className="single_card bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative lg:top-[70%] ">
-                  <Image className='mx-auto' src="/images/token-img.png" width={258} height={261} alt="ownership image" />
-                  <p className="text-golden font-semibold">Harmonix Tokens 2</p>
+                  <Image className='mx-auto' src="/images/token-sol.png" width={258} height={261} alt="ownership image" />
+                  <p className="text-golden font-semibold">Sol Token</p>
                   <div className="flex justify-between">
                   
                     <div className="flex gap-1 items-center">
@@ -69,8 +69,8 @@ const OwnerFeature = () => {
 
               <div className="single_card">
                 <div className="single_card bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative lg:-left-[15px]">
-                  <Image className='mx-auto' src="/images/token-img.png" width={258} height={261} alt="ownership image" />
-                  <p className="text-golden font-semibold">Harmonix Tokens 2</p>
+                  <Image className='mx-auto' src="/images/token-cash.png" width={258} height={261} alt="ownership image" />
+                  <p className="text-golden font-semibold">Cash Flow Token</p>
                   <div className="flex justify-between">
                     
                     <div className="flex gap-1 items-center">
