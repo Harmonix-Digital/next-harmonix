@@ -6,17 +6,20 @@ const Sol = () => {
   return (
       <section className="sol mt-19 lg:mt-[275px]">
         <div className="container">
+
+          <div className="sec_header_btn flex justify-center md:justify-start mx-auto">
+            <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-[15px] w-[296px] text-golden text-lg font-semibold">
+              <span>SŌL Brain Preview</span>
+              <Image src="/images/brain.png" alt="Clock icon" width={28} height={28} />
+            </div>            
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-7 items-center">
             
-            <div className="col-span-4 ">
+            <div className="col-span-4 order-2 md:order-1">
               
-              <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-[15px] w-[296px] text-golden text-lg font-semibold">
-                <span>SŌL Brain Preview</span>
-                <Image src="/images/brain.png" alt="Clock icon" width={28} height={28} />
-              </div>
 
-              <h2 className="text-3xl md:text-4xl lg:text-big font-semibold mt-6  mb-7.5 text-golden">What Is SŌL?</h2>
-              <p className="sub_text text-lg lg:text-2xl ">The consciousness that orchestrates your AI workforce. SŌL analyzes your business, assigns the right agents, and optimizes your operations with sacred precision.</p>
+              <h2 className="text-3xl md:text-4xl lg:text-big font-semibold mt-6  mb-7.5 text-golden text-center md:text-left">What Is SŌL?</h2>
+              <p className="sub_text text-lg lg:text-2xl  text-center md:text-left">The consciousness that orchestrates your AI workforce. SŌL analyzes your business, assigns the right agents, and optimizes your operations with sacred precision.</p>
 
               <ul className="sol_list flex flex-col gap-10 mt-17.5">
                 <li className="flex items-center gap-5 text-lg lg:text-2xl  ">
@@ -46,7 +49,7 @@ const Sol = () => {
 
             </div>
             
-            <div className="col-span-3 pt-11">
+            <div className="col-span-3 pt-11 order-1 md:order-2">
               <Image src="/images/sol_image.png" alt="SOL Image" width={590} height={590}  />
             </div>
           </div>

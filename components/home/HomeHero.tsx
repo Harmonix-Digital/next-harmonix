@@ -4,17 +4,17 @@ import Link from 'next/link'
 
 const HomeHero = () => {
   return (
-      <section className="home_hero overflow-hidden tracking-extra pt-[105px]">
+      <section className="home_hero overflow-hidden tracking-extra pt-5 lg:pt-[105px]">
         <div className="container bg-[url('/images/square-lines.png')] bg-cover bg-center relative">
           <div className="light_images_wrap"></div>
           <Image className="hidden lg:block absolute z-10 w-full max-w-full -top-[5%]" src="/images/left-right-light.png" alt="decorative light" width={1432} height={345} />
           <Image className="hidden lg:block absolute z-10 w-full max-w-[80%] left-1/2 -translate-x-1/2 top-[10%] " src="/images/hero-main-light.png" alt="decorative light" width={1440} height={995} />
 
-          <div className="home_hero_wrap grid grid-cols-1 lg:grid-cols-12 relative z-20 items-center">
+          <div className="home_hero_wrap grid grid-cols-1 lg:grid-cols-12 relative z-20 items-center gap-10 lg:gap-0">
             
             <div className="col-span-6 order-2 lg:order-1">
-              <h1 className="font-semibold text-golden text-4xl md:text-5xl lg:text-6xl leading-9 lg:leading-20">The elite, AI automation platform</h1>
-              <p className="text-lg lg:text-2xl leading-[34px] mt-5 lg:mt-[54px] mb-[64px]">Transform your business with advanced AI agents-powered by blockchain innovation</p>
+              <h1 className="font-semibold text-golden text-4xl md:text-5xl lg:text-6xl leading-9 lg:leading-20 text-center lg:text-left">The elite, AI automation platform</h1>
+              <p className="text-lg lg:text-2xl leading-[34px] mt-5 lg:mt-[54px] mb-[64px] text-center lg:text-left">Transform your business with advanced AI agents-powered by blockchain innovation</p>
 
               <div className="hero_cta_wrap flex flex-col md:flex-row gap-11 text-xl lg:text-2xl font-semibold">
                 <Link href="/agents" className="flex gap-2 bg-white rounded-4xl pt-1 pb-0 pl-[3px] pr-4 text-black items-center justify-center" >

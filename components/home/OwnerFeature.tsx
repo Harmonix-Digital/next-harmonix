@@ -15,11 +15,12 @@ const OwnerFeature = () => {
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-big font-semibold text-center mt-4 mb-5 text-golden"> Unlock the Future of AI Ownership</h2>
-          <p className="sub_text text-lg lg:text-2xl text-center">Our NFTs aren’t just collectibles. They’re functional tokens designed to connect you with rewards, access, and growth inside our AI-driven platform</p>
+          <p className="sub_text text-lg lg:text-2xl text-center">Our NFTs aren't just collectibles. They're functional tokens designed to connect you with rewards, access, and growth inside our AI-driven platform</p>
 
-          <div className="flex flex-col md:flex-row gap-16 mt-11 lg:mt-[180px] lg:pb-[195px]">
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 mt-11 lg:mt-[180px] lg:pb-[195px]">
             
-            <div className="relative flex gap-10 md:gap-0 flex-col md:flex-row">
+            <div className="relative flex gap-10 md:gap-0 flex-col md:flex-row mb-0 md:mb-[250px] lg:mb-0">
               
               <div className="single_card">
                 <div className=" bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative lg:-right-[15px]">
@@ -43,7 +44,7 @@ const OwnerFeature = () => {
               </div>
 
               <div className="single_card">
-                <div className="single_card bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative lg:top-[70%] ">
+                <div className="single_card bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative md:top-[70%] ">
                   <Image className='mx-auto' src="/images/token-sol.png" width={258} height={261} alt="ownership image" />
                   <p className="text-golden font-semibold">Sol Token</p>
                   <div className="flex justify-between">
@@ -92,7 +93,7 @@ const OwnerFeature = () => {
             </div>
 
             <div className="right-col pt-11">
-              <p className="font-semibold text-3xl md:text-4xl lg:text-5xl text-center leading-10 lg:leading-20 text-golden max-w-[500px]">Collect. Connect. Grow with AI</p>
+              <p className="font-semibold text-3xl md:text-4xl lg:text-5xl text-center leading-10 lg:leading-20 text-golden w-full max-w-[700px] mx-auto">Collect. Connect. Grow with AI</p>
               
               <div className="flex flex-col md:flex-row justify-center gap-9 mt-[46px]">
                 <YellowButton href="/" className="shadow-lg">Mint Now</YellowButton>
@@ -101,6 +102,10 @@ const OwnerFeature = () => {
             </div>
 
           </div>
+
+
+
+
 
         </div>
       </section>

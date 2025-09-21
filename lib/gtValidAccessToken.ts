@@ -33,6 +33,7 @@ export async function getValidAccessToken(locationId: string) {
 
   
   if (testRes.status === 401) {
+    console.log("Access Token invalid, creating new one!")
     const refreshRes = await fetch("https://services.leadconnectorhq.com/oauth/token", {
       method: "POST",
       headers: {
@@ -49,9 +50,14 @@ export async function getValidAccessToken(locationId: string) {
       }),
     });
 
+    
+
+    
+
     if (!refreshRes.ok) throw new Error("Failed to refresh token");
 
     const refreshData = await refreshRes.json();
+    console.log("Refresh token creation info:", refreshData)
     accessToken = refreshData.access_token;
     refreshToken = refreshData.refresh_token;
 
