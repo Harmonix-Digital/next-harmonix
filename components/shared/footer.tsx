@@ -94,8 +94,8 @@ const Footer = () => {
 
           </div>
 
-          <div className="footer_bottom pt-20">
-            <p className="text-center mb-11">Copyright © 2025 harmonixdigital.com.ng All rights reserved</p>
+          <div className="footer_bottom pt-6">
+            <p className="text-center mb-11">©️ 2025 Harmonix Digital. All Rights Reserved.</p>
           </div>
 
 
