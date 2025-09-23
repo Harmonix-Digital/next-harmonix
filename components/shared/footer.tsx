@@ -10,7 +10,7 @@ const Footer = () => {
           
           <div className="footer_top grid gap-14 grid-cols-1 lg:grid-cols-8 border-b border-white pb-16">
             
-            <div className="logo_col col-span-6 md:col-span-2">
+            <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="logo_col col-span-6 md:col-span-2">
               <Image src="/images/footer-logo.png" alt="footer logo" width={165} height={60} />
               <p className="text-[15px] leading-6 mt-8">About Harmonix Intelligent Systems for Timeless overeignty. Build → Automate → Scale → Exit.</p>
               
@@ -45,7 +45,7 @@ const Footer = () => {
 
             <div className="col-span-5 flex flex-col md:flex-row lg:flex-nowrap  gap-10 justify-between w-full max-w-[800px] ">
               
-              <div className="">
+              <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="300" className="">
                 <p className="footer_col_header font-medium text-lg mb-2 lg:mb-9.5">Services</p>
                 <ul className='flex flex-col gap-2 lg:gap-6'>
                   <li>
@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
 
 
-              <div className="min-w-[130px]">
+              <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="600" className="min-w-[130px]">
                 <p className="footer_col_header font-medium text-lg mb-2 lg:mb-9.5">Support</p>
                 <ul className='flex flex-col  gap-2 lg:gap-6'>
                   <li>
@@ -80,7 +80,7 @@ const Footer = () => {
               </div>
 
 
-              <div className="">
+              <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="900" className="">
                 <p className="footer_col_header font-medium text-lg mb-2 lg:mb-9.5">Contact</p>
                 <ul className='flex flex-col  gap-2 lg:gap-6'>
                   <li><p className="flex gap-2 items-start"><Image className='mt-1' src="/images/location-icon.png" alt="Location Icon" width={20} height={20} /> <span>Vancouver, BC (Serving Global Clients)</span></p></li>
@@ -94,7 +94,7 @@ const Footer = () => {
 
           </div>
 
-          <div className="footer_bottom pt-6">
+          <div data-aos="fade-up" data-aos-offset="0"  data-aos-duration="700" data-aos-delay="0" className="footer_bottom pt-6">
             <p className="text-center mb-11">©️ 2025 Harmonix Digital. All Rights Reserved.</p>
           </div>
 

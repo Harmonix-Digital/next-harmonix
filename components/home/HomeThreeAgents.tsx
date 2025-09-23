@@ -72,9 +72,10 @@ export default function HomeThreeAgents() {
       <div className="hidden xl:flex justify-center pt-24">
         {/* Left column */}
         <div className="flex flex-col gap-19 col-span-3 max-w-[346px]">
-          {agents.map((agent) => (
+          {agents.map((agent,idx) => (
             
             <button
+              data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay={idx*200}
               key={agent.id}
               onClick={() => setSelected(agent.id)}
               className={`rounded-2xl px-6 pt-6 pb-10 text-left  transition home_agent_index border-[0.7px] bg-[#D9D9D9]/10  ${
@@ -120,7 +121,7 @@ export default function HomeThreeAgents() {
         </div>
 
         {/* Right column */}
-        <div className="rounded-2xl border border-gray-700 bg-black/40 pt-16 pb-15 px-14 col-span-4 w-full max-w-[576px]">
+        <div data-aos="fade-left" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="rounded-2xl border border-gray-700 bg-black/40 pt-16 pb-15 px-14 col-span-4 w-full max-w-[576px]">
           <h2 className="text-golden text-4xl mb-9 font-semibold">
             {current.title}
           </h2>
@@ -180,7 +181,7 @@ export default function HomeThreeAgents() {
       <div className="py-12 flex xl:hidden flex-col gap-14 justify-center items-center">
 
           {agents.map(agent => (
-            <div key={agent.id} className="rounded-xl border border-gray-700 bg-black/40 pt-6 lg:pt-19 pb-15 px-5 lg:px-14 col-span-4 w-full max-w-[576px]">
+            <div key={agent.id} data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="rounded-xl border border-gray-700 bg-black/40 pt-6 lg:pt-19 pb-15 px-5 lg:px-14 col-span-4 w-full max-w-[576px]">
               <h2 className="text-golden text-2xl lg:text-4xl mb-11 font-semibold text-center">
                 {current.title} 
               </h2>

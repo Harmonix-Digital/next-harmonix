@@ -13,10 +13,10 @@ const HomeHero = () => {
           <div className="home_hero_wrap grid grid-cols-1 lg:grid-cols-12 relative z-20 items-center gap-10 lg:gap-0">
             
             <div className="col-span-6 order-2 lg:order-1">
-              <h1 className="font-semibold text-golden text-4xl md:text-5xl lg:text-6xl leading-9 lg:leading-20 text-center lg:text-left">The elite, AI automation platform</h1>
-              <p className="text-lg lg:text-2xl leading-[34px] mt-5 lg:mt-[54px] mb-[64px] text-center lg:text-left">Transform your business with advanced AI agents-powered by blockchain innovation</p>
+              <h1 data-aos="fade-up" data-aos-offset="0"  data-aos-duration="700" data-aos-delay="0"   className="font-semibold text-golden text-4xl md:text-5xl lg:text-6xl leading-9 lg:leading-20 text-center lg:text-left">The elite, AI automation platform</h1>
+              <p data-aos="fade-up" data-aos-offset="0"  data-aos-duration="700" data-aos-delay="0"   className="text-lg lg:text-2xl leading-[34px] mt-5 lg:mt-[54px] mb-[64px] text-center lg:text-left">Transform your business with advanced AI agents-powered by blockchain innovation</p>
 
-              <div className="hero_cta_wrap flex flex-col md:flex-row gap-11 text-xl lg:text-2xl font-semibold">
+              <div data-aos="fade-up" data-aos-offset="0"  data-aos-duration="700" data-aos-delay="0"   className="hero_cta_wrap flex flex-col md:flex-row gap-11 text-xl lg:text-2xl font-semibold">
                 <Link href="/agents" className="flex gap-2 bg-white rounded-4xl pt-1 pb-0 pl-[3px] pr-4 text-black items-center justify-center" >
                   <Image src="/images/green-circle.png" alt="Join icon" width={61} height={56}/>
                   <span>Activate Your Agent</span>
@@ -30,22 +30,22 @@ const HomeHero = () => {
             </div>
 
             <div className="col-span-6 order-1 lg:order-2">
-              <Image className='max-w-full mx-auto' src="/images/home-hero.webp" alt="Ai Image" height={664} width={656}  />
+              <Image data-aos="zoom-in" data-aos-offset="0"  data-aos-duration="1500" className='max-w-full mx-auto' src="/images/home-hero.webp" alt="Ai Image" height={664} width={656}  />
             </div>
           </div>
 
-          <div className="hero_blocks_wrap flex flex-col md:flex-row gap-7 lg:gap-4 justify-between items-center relative z-20 mt-22">
+          <div  className="hero_blocks_wrap flex flex-col md:flex-row gap-7 lg:gap-4 justify-between items-center relative z-20 mt-22">
             
-            <div className="home_hero_block">
+            <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="home_hero_block">
               <p className="text-3xl font-semibold text-center text-golden">Early Adopters</p>
               <p className="text-lg font-medium text-center max-w-[230px] mx-auto">Manage your AI agents 
               from a single dashboard</p>
             </div>           
-            <div className="home_hero_block">
+            <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="300" className="home_hero_block">
               <p className="text-3xl font-semibold text-center text-golden">Agent Marketplace</p>
               <p className="text-lg font-medium text-center max-w-[230px] mx-auto">Browse and deploy AI agents to serve yor needs</p>
             </div>           
-            <div className="home_hero_block">
+            <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="600" className="home_hero_block">
               <p className="text-3xl font-semibold text-center text-golden">Harmonix Token</p>
               <p className="text-lg font-medium text-center max-w-[230px] mx-auto">Recharge your AI agents with our stable token</p>
             </div>

@@ -9,20 +9,20 @@ const OwnerFeature = () => {
       <section className="owner_feature mt-19">
         <div className="container">
 
-          <div className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-[15px] w-[296px] mx-auto text-golden text-lg font-semibold">
+          <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="sec_btn flex items-center justify-center gap-2 bg-[#D9D9D9]/10 rounded-[20px] px-8 py-[15px] w-[296px] mx-auto text-golden text-lg font-semibold">
             <span>Harmonix Tokens</span>
             <Image src="/images/dollar.png" alt="Clock icon" width={28} height={28} />
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-big font-semibold text-center mt-4 mb-5 text-golden"> Unlock the Future of AI Ownership</h2>
-          <p className="sub_text text-lg lg:text-2xl text-center">Our NFTs aren't just collectibles. They're functional tokens designed to connect you with rewards, access, and growth inside our AI-driven platform</p>
+          <h2 data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="text-3xl md:text-4xl lg:text-big font-semibold text-center mt-4 mb-5 text-golden"> Unlock the Future of AI Ownership</h2>
+          <p data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="sub_text text-lg lg:text-2xl text-center">Our NFTs aren't just collectibles. They're functional tokens designed to connect you with rewards, access, and growth inside our AI-driven platform</p>
 
 
           <div className="grid grid-cols-1 lg:grid-cols-2 mt-11 lg:mt-[180px] lg:pb-[195px]">
             
             <div className="relative flex gap-10 md:gap-0 flex-col md:flex-row mb-0 md:mb-[250px] lg:mb-0">
               
-              <div className="single_card">
+              <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="single_card">
                 <div className=" bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative lg:-right-[15px]">
                   <Image className='mx-auto' src="/images/token-echo.png" width={258} height={261} alt="ownership image" />
                   <p className="text-golden font-semibold">Echo Token</p>
@@ -43,7 +43,7 @@ const OwnerFeature = () => {
                 </div>
               </div>
 
-              <div className="single_card">
+              <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="300" className="single_card">
                 <div className="single_card bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative md:top-[70%] ">
                   <Image className='mx-auto' src="/images/token-sol.png" width={258} height={261} alt="ownership image" />
                   <p className="text-golden font-semibold">Sol Token</p>
@@ -68,7 +68,7 @@ const OwnerFeature = () => {
 
               </div>
 
-              <div className="single_card">
+              <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="600" className="single_card">
                 <div className="single_card bg-[#D9D9D9]/10 rounded-[10px] px-3.5 py-2 relative lg:-left-[15px]">
                   <Image className='mx-auto' src="/images/token-cash.png" width={258} height={261} alt="ownership image" />
                   <p className="text-golden font-semibold">Cash Flow Token</p>
@@ -92,7 +92,7 @@ const OwnerFeature = () => {
 
             </div>
 
-            <div className="right-col pt-11">
+            <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="right-col pt-11">
               <p className="font-semibold text-3xl md:text-4xl lg:text-5xl text-center leading-10 lg:leading-20 text-golden w-full max-w-[700px] mx-auto">Collect. Connect. Grow with AI</p>
               
               <div className="flex flex-col md:flex-row justify-center gap-9 mt-[46px]">

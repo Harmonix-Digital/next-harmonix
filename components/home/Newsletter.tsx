@@ -49,10 +49,10 @@ const Newsletter = () => {
   return (
       <section className="home_newsletter mt-24 lg:mt-[220px]">
         <div className="container">
-          <h2 className="font-semibold text-3xl md:text-4xl  lg:text-big text-center leading-10 lg:leading-20 text-golden mb-4 lg:mb-9 tracking-wider">Get Started with Harmonix</h2>
-          <p className="sub_text text-lg lg:text-2xl text-center">Enter your details below to access our investor brochure</p>
+          <h2 data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="font-semibold text-3xl md:text-4xl  lg:text-big text-center leading-10 lg:leading-20 text-golden mb-4 lg:mb-9 tracking-wider">Get Started with Harmonix</h2>
+          <p data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="sub_text text-lg lg:text-2xl text-center">Enter your details below to access our investor brochure</p>
 
-          <form onSubmit={handleSubmit} className="mt-14 lg:mt-[90px] block relative">
+          <form data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" onSubmit={handleSubmit} className="mt-14 lg:mt-[90px] block relative">
 
             {isLoading && (
               <div className="absolute left-0 top-0 h-full w-full flex items-center justify-center z-20">
@@ -66,7 +66,7 @@ const Newsletter = () => {
             </div>
           </form>
 
-          <div className="download_wrap mt-18 ">
+          <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="download_wrap mt-18 ">
             <YellowButton className="flex gap-1 items-center mx-auto tracking-wide lg:!py-5">
               <span>Download Investor Check PDF</span>
               <Image src="/images/download.png" width={26} height={26} alt="download button" />
