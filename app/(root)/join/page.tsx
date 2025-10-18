@@ -22,6 +22,8 @@ const JoinPage = () => {
             <h1 className="text-golden text-3xl md:text-5xl lg:text-[58px] leading-20 font-medium text-center mt-12 tracking-extra ">Get early access</h1>
             <p className="text-lg md:text-2xl font-semibold mt-3 text-center max-w-[862px] mx-auto text-dimWhite">Be among the first to experience AI automation that grows with your vision. Connect with visionary founders and personalize setup and customization. Sign up to be notified when we are launch!</p>
           </div>
+
+          
           <Form />
 
 

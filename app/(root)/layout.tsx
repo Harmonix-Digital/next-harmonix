@@ -16,7 +16,7 @@ export default function RootLayout({
     <div className="flex h-screen flex-col">
       <ToastContainer />
       <Header />
-      <main className="flex-1 wrapper">
+      <main className="flex-1 wrapper mt-24">
         {children}
       </main>
       <Footer />

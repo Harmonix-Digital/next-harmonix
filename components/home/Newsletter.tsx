@@ -21,11 +21,11 @@ const Newsletter = () => {
 
     // console.log({ email });
 
-    // Example: send to API route
+    // send to API route
     const signupRes = await fetch("/api/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email, source:"harmonix_landing_footer_form" }),
     });
 
     const signupdata = await signupRes.json();
@@ -67,10 +67,14 @@ const Newsletter = () => {
           </form>
 
           <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="0" className="download_wrap mt-18 ">
-            <YellowButton className="flex gap-1 items-center mx-auto tracking-wide lg:!py-5">
+
+            <div className='max-w-[500px] mx-auto flex justify-center'> 
+
+              <a  href="/pdf/investor.pdf" download className= "px-6 py-3 bg-golden border border-golden hover:bg-siteBlack  text-siteBlack hover:text-golden font-semibold rounded-xl transition duration-200 text-lg min-w-[192px] text-center cursor-pointer flex gap-1 items-center mx-auto tracking-wide lg:!py-5">
               <span>Download Investor Check PDF</span>
               <Image src="/images/download.png" width={26} height={26} alt="download button" />
-            </YellowButton>
+              </a>
+            </div>
           </div>
 
 

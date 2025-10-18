@@ -48,7 +48,8 @@ const Footer = () => {
               <div data-aos="fade-up" data-aos-offset="200"  data-aos-duration="700" data-aos-delay="300" className="">
                 <p className="footer_col_header font-medium text-lg mb-2 lg:mb-9.5">Services</p>
                 <ul className='flex flex-col gap-2 lg:gap-6'>
-                  <li>
+                  
+                  {/* <li>
                     <Link className=' hover:text-golden' href="/">AI & Automation Infrastructure</Link>
                   </li>
                   <li>
@@ -59,7 +60,22 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link className=' hover:text-golden' href="/">Community Building</Link>
+                  </li> */}
+
+                  <li>
+                    <span className="text-gray-400 cursor-not-allowed">AI & Automation Infrastructure</span>
                   </li>
+                  <li>
+                    <span className="text-gray-400 cursor-not-allowed">Web Development (Web2 + Web3)</span>
+                  </li>
+                  <li>
+                    <span className="text-gray-400 cursor-not-allowed">Blockchain & Tokenization</span>
+                  </li>
+                  <li>
+                    <span className="text-gray-400 cursor-not-allowed">Community Building</span>
+                  </li>
+
+
                 </ul>
               </div>
 

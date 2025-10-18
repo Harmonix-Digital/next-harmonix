@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "Marketplace", path: "/market" },
-  { name: "Demo", path: "/demo/cash" },
+  // { name: "Marketplace", path: "/market" },
+  // { name: "Demo", path: "/demo/cash" },
   { name: "Pricing", path: "/pricing" },
 ];
 
@@ -16,7 +16,8 @@ const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <section className="header tracking-extra relative">
+    // <section className="header tracking-extra relative">
+    <section className="header tracking-extra fixed top-0 left-0 w-full z-50 bg-[#0F1115]">
       <div className="container">
         <div className="header_wrap flex justify-between items-center mt-[30px] mb-[7px]">
           {/* Logo */}
@@ -30,10 +31,8 @@ const Header = () => {
           <div className="main_nav hidden lg:block">
             <nav className="flex gap-9 items-center font-medium text-lg">
               {navItems.map((item) => {
-                const isActive =
-                  item.path === "/demo/cash"
-                    ? pathname.startsWith("/demo")
-                    : pathname === item.path;
+                const isActive = item.path === "/demo/cash" ? pathname.startsWith("/demo")
+                    : pathname === item.path; 
 
                 return (
                   <Link
@@ -51,10 +50,10 @@ const Header = () => {
           {/* Utility Nav */}
           <div className="utility_nav hidden lg:flex">
             <ul className="flex gap-7 items-center">
-              <Link href="/" className="flex gap-1">
+              {/* <Link href="/" className="flex gap-1">
                 <p>Log in</p>
                 <Image src="/images/arrow-top-right.png" alt="Login icon" width={18} height={18} />
-              </Link>
+              </Link> */}
               <Link
                 href="/join"
                 className="bg-green/89 rounded-3xl px-4 py-3 hover:bg-white hover:text-green transition-colors duration-300 font-semibold"
@@ -105,10 +104,10 @@ const Header = () => {
           })}
 
           <div className="flex flex-col gap-4 mt-6">
-            <Link href="/" className="flex gap-1 justify-center" onClick={() => setMobileOpen(false)}>
+            {/* <Link href="/" className="flex gap-1 justify-center" onClick={() => setMobileOpen(false)}>
               <p>Log in</p>
               <Image src="/images/arrow-top-right.png" alt="Login icon" width={18} height={18} />
-            </Link>
+            </Link> */}
             <Link
               href="/join"
               onClick={() => setMobileOpen(false)}
