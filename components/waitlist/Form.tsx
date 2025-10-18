@@ -117,8 +117,14 @@ export default function PhoneField() {
         termsAgreement: false,
         source:"harmonix_join_waitlist",
       });
-    } catch (error: any) {
-      setStatus({ loading: false, message: error.message, error: true });
+    } catch (error: unknown) {
+      let message = 'An unknown error occurred';
+    
+      if (error instanceof Error) {
+        message = error.message;
+      }
+    
+      setStatus({ loading: false, message, error: true });
     }
   };
 
