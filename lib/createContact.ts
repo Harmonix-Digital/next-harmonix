@@ -15,14 +15,27 @@ export async function createContact(accessToken: string, contactData: unknown) {
       redirect: "follow",
     });
 
+    const ghlResponse = await response.json()
+
+    console.log("GHL Response:", ghlResponse)
+    // console.log("GHL Response Status:", response.status)
+
+    if(response.status == 400){
+      throw new Error(`User already exists!`);
+    }
+
+    /*
     if (!response.ok) {
       const errorText = await response.text();
       throw new Error(`GHL API error: ${response.status} - ${errorText}`);
     }
+      */
 
-    return await response.json();
-  } catch (err: unknown) {
-    console.error("Create contact error:", err);
-    throw err;
+    // return await response.json();
+    return {success:true, message: ghlResponse.message}
+  } catch (err: any) {
+    // console.error("Create contact error:", err);
+    return {success:false, message: err.message}
+  
   }
 }

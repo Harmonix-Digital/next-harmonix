@@ -37,7 +37,7 @@ const Newsletter = () => {
     if(signupdata.success){
       toast.success("Your submission has been received. Thank you!")
     }else{
-      toast.error("Something went wrong. Please try later!")
+      toast.error(signupdata.message)
     }
 
 

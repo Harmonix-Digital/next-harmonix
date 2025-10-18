@@ -18,12 +18,24 @@ export async function POST(req: Request) {
       name,
       email,
       locationId:"eKlKYR6vdxwBnCFOUy5l",
+      source:"harmonix_landing_footer_form"
     };
 
+    const result = await createContact(token, contactData);
+    // console.log("Contact creation result on route file:", result);
 
+    if(result.success){
+      return NextResponse.json({ success: true, message: "Form submitted!" });
+    }else{
+      return NextResponse.json({ success: false, message: result.message });
+    }
+    
+    
+
+    /*
     try {
  
-     const result = await createContact(token, contactData);
+    const result = await createContact(token, contactData);
     console.log("Contact created:", result);
     // return result;
     return NextResponse.json({ success: true, message: "Form submitted!" });
@@ -31,17 +43,19 @@ export async function POST(req: Request) {
 
 
     } catch (error:unknown) {
-      console.log(error)
+      console.log("Error on route page: ",error)
 
       if (error instanceof Error) {
         console.error(error.message);
         return NextResponse.json({ success: false, message: error.message });
       } else {
         console.error("Unknown error", error);
-        return NextResponse.json({ success: false, message: 'Something went wrong!' });
+        return NextResponse.json({ success: false, message: error ? error : 'Something went wrong!' });
       }
       
     }
+
+    */
 
     
   } catch (error) {
