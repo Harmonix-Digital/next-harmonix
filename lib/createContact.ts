@@ -33,9 +33,15 @@ export async function createContact(accessToken: string, contactData: unknown) {
 
     // return await response.json();
     return {success:true, message: ghlResponse.message}
-  } catch (err: any) {
+  } catch (err: unknown) {
     // console.error("Create contact error:", err);
-    return {success:false, message: err.message}
+    // return {success:false, message: err.message}
+    if (err instanceof Error) {
+      return { success: false, message: err.message };
+    }
+  
+    return { success: false, message: String(err) };
+
   
   }
 }
