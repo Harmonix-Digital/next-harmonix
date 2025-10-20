@@ -33,6 +33,7 @@ const DemoPage = () => {
   //   setInput("")
   // }
   
+  
   const sendMessage = async () => {
     if (!input.trim() || loading) return;
     setLoading(true);
