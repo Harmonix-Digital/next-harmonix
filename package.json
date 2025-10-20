@@ -9,10 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@openai/agents": "^0.1.10",
     "aos": "^2.3.4",
     "classnames": "^2.5.1",
     "mongoose": "^8.18.1",
     "next": "15.5.2",
+    "openai": "^6.6.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-phone-input-2": "^2.15.1",
