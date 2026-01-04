@@ -35,6 +35,6 @@ export const echoAgent = new Agent({
     temperature: 1,
     topP: 1,
     maxTokens: 2048,
-    store: false, // ❗ we manage memory ourselves
+    store: false, //
   },
 });
