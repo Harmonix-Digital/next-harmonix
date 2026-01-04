@@ -66,7 +66,7 @@ export const runWorkflow = async (workflow: WorkflowInput) => {
     // const trace = caHResultTemp.trace;
     
     // console.log("Trace metadata:", trace.metadata);
-    // @ts-ignore because `_context` is internal
+
     // console.log("Token usage:", caHResultTemp._context?.usage?.[0]);
     // console.log("Token usage context:", caHResultTemp._context);
     // const usage =
@@ -82,7 +82,7 @@ export const runWorkflow = async (workflow: WorkflowInput) => {
 // Try to extract usage from different possible locations
 // console.log("Run result keys:", Object.keys(caHResultTemp as any)); //state
 // console.log("State keys:", Object.keys((caHResultTemp as any).state || {}));
-const usage = (caHResultTemp.state as any)?._lastTurnResponse?.usage;
+// const usage = (caHResultTemp.state as any)?._lastTurnResponse?.usage;
 // console.log("Token usage:", usage);
 
 
@@ -104,6 +104,6 @@ const usage = (caHResultTemp.state as any)?._lastTurnResponse?.usage;
       output_text: caHResultTemp.finalOutput ?? ""
     };
 
-    return {caHResult, usage};
+    return {caHResult};
   });
 }
