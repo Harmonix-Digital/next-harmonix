@@ -15,7 +15,7 @@ const DemoPage = () => {
   const [input, setInput] = useState("")
   const [messages, setMessages] = useState<{ from: string; text: string }[]>([])
 
-
+  const sessionId = React.useMemo(() => crypto.randomUUID(), []);
   
   const sendMessage = async () => {
     if (!input.trim() || loading) return;
@@ -26,7 +26,7 @@ const DemoPage = () => {
       const res = await fetch("/api/agents/echo", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ input_as_text: input }),
+        body: JSON.stringify({ input_as_text: input,sessionId }),
       });
       const data = await res.json();
       setMessages((prev) => [...prev, { from: "agent", text: data.output_text }]);

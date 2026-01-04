@@ -6,7 +6,7 @@ const HomeDescription = () => {
   return (
       <section className="home_desc mt-21">
         <div className="container">
-          <h2 data-aos="zoom-in" data-aos-offset="200"  data-aos-duration="1500"  className="text-3xl md:text-4xl lg:text-big font-semibold text-center mb-5">Design a business that runs <span className="text-golden">itself</span> </h2>
+          <h2 data-aos="fade-in" data-aos-offset="200"  data-aos-duration="1500"  className="text-3xl md:text-4xl lg:text-big font-semibold text-center mb-5">Design a business that runs <span className="text-golden">itself</span> </h2>
           <p data-aos="zoom-in" data-aos-offset="200"  data-aos-duration="1500" className="sub_text text-xl lg:text-2xl text-center">A full AI operating system for teams who value freedom, clarity, and flow.</p>
           
 

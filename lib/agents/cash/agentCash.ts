@@ -59,6 +59,41 @@ export const runWorkflow = async (workflow: WorkflowInput) => {
         ...conversationHistory
       ]
     );
+
+    // console.log("caHResultTemp:",caHResultTemp)
+    // console.log("Token usage:", caHResultTemp?.usage);
+    // console.log("Token usage:", caHResultTemp.state?.usage);
+    // const trace = caHResultTemp.trace;
+    
+    // console.log("Trace metadata:", trace.metadata);
+    // @ts-ignore because `_context` is internal
+    // console.log("Token usage:", caHResultTemp._context?.usage?.[0]);
+    // console.log("Token usage context:", caHResultTemp._context);
+    // const usage =
+    // caHResultTemp?.usage ||
+    // (caHResultTemp as any)?._context?.usage?.[0] ||
+    // (caHResultTemp as any)?._lastTurnResponse?.usage;
+  
+    // console.log("Token usage:", caHResultTemp.RunResult.state._lastTurnResponse.usage);
+    // console.log("Token usage:", caHResultTemp);
+    // console.log("Token usage:", caHResultTemp.RunResult.state.RunState);
+    // const usage = (caHResultTemp as any)?._context?.usage?.[0];
+    // console.log("Token usage:", usage);
+// Try to extract usage from different possible locations
+// console.log("Run result keys:", Object.keys(caHResultTemp as any)); //state
+// console.log("State keys:", Object.keys((caHResultTemp as any).state || {}));
+const usage = (caHResultTemp.state as any)?._lastTurnResponse?.usage;
+// console.log("Token usage:", usage);
+
+
+
+
+
+  
+    
+
+
+
     conversationHistory.push(...caHResultTemp.newItems.map((item) => item.rawItem));
 
     if (!caHResultTemp.finalOutput) {
@@ -69,6 +104,6 @@ export const runWorkflow = async (workflow: WorkflowInput) => {
       output_text: caHResultTemp.finalOutput ?? ""
     };
 
-    return caHResult;
+    return {caHResult, usage};
   });
 }

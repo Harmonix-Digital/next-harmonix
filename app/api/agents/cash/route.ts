@@ -10,5 +10,8 @@ export async function POST(req: Request) {
   }
 
   const result = await runWorkflow({ input_as_text: body.input_as_text });
-  return new Response(JSON.stringify(result), { status: 200 });
+
+  console.log("result from api route:", result)
+
+  return new Response(JSON.stringify(result.caHResult), { status: 200 });
 }
